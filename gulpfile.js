@@ -72,8 +72,8 @@ function images() {
  */
 
 function fonts() {
-  return gulp.src('src/fonts/**/*')
-    .pipe(gulp.dest('assets/fonts'));
+  return gulp.src('src/fonts.scss/**/*')
+    .pipe(gulp.dest('assets/fonts.scss'));
 }
 
 /**

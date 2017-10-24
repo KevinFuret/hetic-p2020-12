@@ -3,3 +3,11 @@ $breakpoints: (
   'large': (min-width: 1000px),
   'huge': (min-width: 1200px),
 );
+
+// colors
+
+$dark-grey : #131313;
+$grey : #535558;
+$medium-grey : #535558;
+$gradient : linear-gradient(136deg, #46b6fe, #00b1bb);
+$white : #ffffff;
