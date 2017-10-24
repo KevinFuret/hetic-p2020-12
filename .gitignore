@@ -1,0 +1,12 @@
+# Packages
+node_modules
+vendor
+
+# Mac files
+.DS_Store
+
+# Dist folder
+assets
+
+#yarn
+yarn-error.log
