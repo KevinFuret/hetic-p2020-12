@@ -1,5 +1,5 @@
 .header {
-  background: #f5b335;
+  background: white;
   height: 70px;
   position: fixed;
   top: 0;
@@ -8,5 +8,14 @@
 }
 
 .header__main {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  .logo {
+    margin-left: 10px;
+    img {
+      width: 30px;
+    }
+  }
 }
