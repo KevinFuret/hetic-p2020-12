@@ -1,0 +1,33 @@
+.features__block--top {
+  padding: 0px 30px 30px 30px;
+  height: 20vh;
+}
+
+.features__block--bottom {
+  display: inherit;
+  height: 80vh;
+  flex-direction: row;
+  .features__img--left {
+    background-color: gray;
+    width: 45%;
+    height: 100%;
+  }
+
+  .features__list--right {
+    display: flex;
+    background-color: darkgreen;
+    width: 55%;
+    .features__list--items {
+      width: 100%;
+      text-align: left;
+      height: 100%;
+      display: inherit;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column-reverse;
+      .features__item {
+        width: 100%;
+      }
+    }
+  }
+}

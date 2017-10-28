@@ -21,13 +21,18 @@
   }
   &:nth-child(2) {
     position: relative;
-    padding: 80px 5px 50px 5px;
+    padding: 70px 5px 50px 5px;
   }
   &:nth-child(3) {
-      background-color: blue;
+    padding: 70px 0px 0px 0px;
+    background: url("http://lorempixel.com/1400/1400/abstract/7/") no-repeat;
+    background-size: cover;
+    &.demo__video {
+      background-color: ghostwhite;
+    }
   }
   &:nth-child(4) {
-      background-color: pink;
+    padding: 70px 0px 0px 0px;
   }
   &:nth-child(5) {
       background-color: aqua;
@@ -38,4 +43,5 @@
   &:nth-child(7) {
       background-color: thistle;
   }
+
 }
