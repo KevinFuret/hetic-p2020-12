@@ -1,0 +1,10 @@
+.zoom__img {
+  .zoom__img--content {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+    z-index: 1000;
+    bottom: -20%;
+    right: -21rem;
+  }
+}

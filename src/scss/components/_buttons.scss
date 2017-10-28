@@ -21,6 +21,11 @@
   margin-right: 15px;
 }
 
-.button--text {
+.button__top:hover{
+  cursor : pointer;
+}
+
+.button__text {
   padding-top: 6px;
+  align-items : center;
 }

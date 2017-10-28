@@ -3,6 +3,7 @@
   color : $dark-grey;
   font-size : 32px;
   line-height : 1.2;
+  margin-bottom: 20px;
 }
 
 .general__title--white {
@@ -57,6 +58,14 @@
 
 .general__button--bold {
   @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 15px;
+  line-height : 1.5;
+  text-transform: uppercase;
+}
+
+.general__button--light {
+  @include font-face('BentonSans', 'BentonSans-Light', 300, normal);
   color : $white;
   font-size : 15px;
   line-height : 1.5;
