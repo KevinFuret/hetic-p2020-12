@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    var c, currentScrollTop = 0,
-        navbar = document.getElementById('header');
+    var c, currentScrollTop = 0;
+    var navbar = document.querySelector('.header');
+    console.log(navbar);
+    console.log("coucou");
 
     window.addEventListener("scroll", function () {
+
         var a = window.scrollY;
         var b = navbar.clientHeight;
         currentScrollTop = a;
