@@ -9,9 +9,26 @@
   }
 }
 
-.softwares__image {
+.softwares__image--1 {
   height : 35%;
+
+  img {
+    height : 110%;
+    margin-left : -10%;
+    margin-top : -7%;
+  }
 }
+
+.softwares__image--2 {
+  height : 25%;
+
+  img {
+    height : 110%;
+    margin-top : -12%;
+    margin-left : -5%;
+  }
+}
+
 
 .softwares__infos {
   height : 30%;
@@ -25,7 +42,6 @@
 
 .softwares__button {
   height : 10%;
-  padding-bottom : 20px;
 
   .demo__button {
     width: 180px;
@@ -34,5 +50,12 @@
 }
 
 .softwares__space{
-  height : 25%;
+  height : 15%;
+}
+
+.softwares__others{
+  height : 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

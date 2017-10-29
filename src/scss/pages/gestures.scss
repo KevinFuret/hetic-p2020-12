@@ -30,14 +30,14 @@
   padding : 0px 50px 0px 50px;
 
   .gestures__choices--top {
-    height : 50%;
+    height : 40%;
     display: inherit;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .gesture__choices--bottom {
-    height : 50%;
+    height : 60%;
     display: inherit;
     justify-content: space-around;
     align-items: center;
