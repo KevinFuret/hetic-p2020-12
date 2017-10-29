@@ -1,0 +1,45 @@
+.gestures__slider {
+  height: 20%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    justify-content: space-around;
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+  }
+}
+
+.gestures__img {
+  text-align: center;
+  height: 50%;
+  width: auto;
+  position: relative;
+
+  .gestures__img--content {
+    height : 100%;
+  }
+}
+
+.gestures__choices {
+  height : 30%;
+  display: flex;
+  flex-direction: column;
+  padding : 0px 50px 0px 50px;
+
+  .gestures__choices--top {
+    height : 50%;
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .gesture__choices--bottom {
+    height : 50%;
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

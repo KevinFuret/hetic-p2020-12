@@ -8,25 +8,39 @@
   height: 80vh;
   flex-direction: row;
   .features__img--left {
-    background-color: gray;
+    position: relative;
     width: 45%;
     height: 100%;
+    .features__img--content {
+      position: absolute;
+      top: -18%;
+      right: -40%;
+    }
   }
 
   .features__list--right {
     display: flex;
-    background-color: darkgreen;
     width: 55%;
     .features__list--items {
+      align-items: flex-end;
       width: 100%;
-      text-align: left;
       height: 100%;
       display: inherit;
-      align-items: center;
+      text-align: left;
       justify-content: space-around;
-      flex-direction: column-reverse;
+      flex-direction: column;
       .features__item {
+        align-items: center;
+        vertical-align: middle;
+        display: inherit;
+        flex-direction: row;
         width: 100%;
+        img {
+          margin-right: 20px;
+          width: 22px;
+          height: 24px;
+          margin-bottom: 5px;
+        }
       }
     }
   }
