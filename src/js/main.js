@@ -16,4 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         c = currentScrollTop;
     });
+
+    setInterval(function() {
+      var test = window.scrollY;
+      console.log(test)
+    }, 500);
 });

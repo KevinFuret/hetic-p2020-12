@@ -93,7 +93,7 @@ gulp.task('default', gulp.parallel(scss, js, images, fonts, function(done) {
   //   server: {
   //   baseDir: ''
   // },
-    proxy: "http://localhost:8888/hetic-p2020-12"
+    proxy: "http://localhost:8000/hetic-p2020-12"
   });
 
   gulp.watch('src/**/*.scss', scss);
