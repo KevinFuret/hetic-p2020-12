@@ -38,18 +38,16 @@
     display: flex;
     background-color: lightgrey;
   }
-  &:nth-child(6) {
-  }
-  &:nth-child(7) {
-  }
-  &:nth-child(8) {
-    background-color: aqua;
-  }
-  &:nth-child(9) {
-    background-color: red;
-  }
-  &:nth-child(10) {
-    background-color: thistle;
-  }
 
+}
+
+.container__info--bigger {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  height: 120vh;
+  text-align: center;
+  overflow: hidden;
 }

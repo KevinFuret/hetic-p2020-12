@@ -30,16 +30,17 @@
   padding : 0px 50px 0px 50px;
 
   .gestures__choices--top {
-    height : 40%;
-    display: inherit;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
-
-  .gesture__choices--bottom {
-    height : 60%;
+    height : 50%;
     display: inherit;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
+  }
+
+  .gesture__choices--bottom {
+    height : 20%;
+    display: inherit;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }

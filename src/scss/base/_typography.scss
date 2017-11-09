@@ -16,7 +16,7 @@
 .general__subtitle--book {
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $dark-grey;
-  font-size : 24px;
+  font-size : 20px;
   line-height : 1.4;
 }
 
@@ -38,7 +38,7 @@
 .general__text {
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $dark-grey;
-  font-size : 16px;
+  font-size : 14px;
   line-height : 1.5;
 }
 

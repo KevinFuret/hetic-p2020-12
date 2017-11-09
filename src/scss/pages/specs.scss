@@ -1,0 +1,23 @@
+.specs {
+  background-image: linear-gradient(to bottom, #26313a, #2f4252);
+}
+
+.specs__titles {
+  height : 25%;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+
+  h1 {
+    margin-bottom : 20px;
+  }
+}
+
+.specs__image {
+  height : 30%;
+
+  img {
+    width : 100%;
+    margin : 0% 5% 0% 5%;
+  }
+}
