@@ -12,6 +12,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 var pxtorem = require('gulp-pxtorem');
+var plumber = require('gulp-plumber');
 
 /////////////
 var postcss = require('gulp-postcss');
@@ -23,6 +24,7 @@ var processors = [
 ////////////////
 
 var isProd = process.env.NODE_ENV === 'production';
+var dist = "assets";
 
 /**
  * SCSS
@@ -30,13 +32,14 @@ var isProd = process.env.NODE_ENV === 'production';
 
 function scss() {
   return gulp.src('src/scss/main.scss')
+  .pipe(plumber())
   .pipe(gulpif(!isProd, sourcemaps.init()))
   .pipe(sass())
   .pipe(gulpif(isProd, minifyCSS()))
   .pipe(postcss(processors))
   .pipe(pxtorem())
   .pipe(gulpif(!isProd, sourcemaps.write('.')))
-  .pipe(gulp.dest('assets/css'))
+  .pipe(gulp.dest(dist + '/css'))
   .pipe(sync.stream())
 }
 
@@ -48,12 +51,19 @@ function js() {
   return browserify({entries: ['src/js/main.js'], debug: true})
     .transform(babelify, {presets: 'es2015'})
     .bundle()
+    .on('error', function(err){
+      console.log(err.stack);
+      this.emit('end');
+
+      sync.notify("Compiling, please wait!");
+    })
+    .pipe(plumber())
     .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(gulpif(!isProd, sourcemaps.init({loadMaps: true})))
     .pipe(uglify())
     .pipe(gulpif(!isProd, sourcemaps.write('.')))
-    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest(dist + '/js'))
     .pipe(sync.stream());
 };
 
@@ -64,7 +74,7 @@ function js() {
 function images() {
   return gulp.src('src/img/**/*')
     .pipe(gulpif(isProd, imagemin({verbose: true})))
-    .pipe(gulp.dest('assets/img'));
+    .pipe(gulp.dest(dist + '/img'));
 }
 
 /**
@@ -73,15 +83,18 @@ function images() {
 
 function fonts() {
   return gulp.src('src/fonts.scss/**/*')
-    .pipe(gulp.dest('assets/fonts.scss'));
+    // .pipe(gulp.dest(`${dist}/fonts.scss`));
+    .pipe(gulp.dest(dist + '/fonts.scss'));
 }
+
+
 
 /**
  * GLOBAL
  */
 
 function clean() {
-  return del(['assets']);
+  return del([dist]);
 }
 
 gulp.task('clean', clean);
@@ -93,6 +106,7 @@ gulp.task('default', gulp.parallel(scss, js, images, fonts, function(done) {
   //   server: {
   //   baseDir: ''
   // },
+    notify: true,
     proxy: "http://localhost:8000/hetic-p2020-12"
   });
 
