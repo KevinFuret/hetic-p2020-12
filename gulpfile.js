@@ -24,7 +24,19 @@ var processors = [
 ////////////////
 
 var isProd = process.env.NODE_ENV === 'production';
-var dist = "assets";
+var dist = "dist";
+
+/**
+ * HTML
+ */
+
+function html() {
+  return gulp.src('src/index.html')
+    .pipe(gulp.dest(dist))
+    .pipe(sync.stream());
+}
+
+
 
 /**
  * SCSS
@@ -72,9 +84,9 @@ function js() {
  */
 
 function images() {
-  return gulp.src('src/img/**/*')
+  return gulp.src('src/images/**/*')
     .pipe(gulpif(isProd, imagemin({verbose: true})))
-    .pipe(gulp.dest(dist + '/img'));
+    .pipe(gulp.dest(dist + '/images'));
 }
 
 /**
@@ -82,9 +94,9 @@ function images() {
  */
 
 function fonts() {
-  return gulp.src('src/fonts.scss/**/*')
+  return gulp.src('src/fonts/**/*')
     // .pipe(gulp.dest(`${dist}/fonts.scss`));
-    .pipe(gulp.dest(dist + '/fonts.scss'));
+    .pipe(gulp.dest(dist + '/fonts'));
 }
 
 
@@ -99,16 +111,17 @@ function clean() {
 
 gulp.task('clean', clean);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(scss, js, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts)));
 
-gulp.task('default', gulp.parallel(scss, js, images, fonts, function(done) {
+gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done) {
   sync.init({
-  //   server: {
-  //   baseDir: ''
-  // },
-    proxy: "http://localhost:8888/hetic-p2020-12"
+     server: {
+    baseDir: 'dist'
+  }
+  //  proxy: "http://localhost:3000/hetic-p2020-12/dist/"
   });
 
+  gulp.watch('src/index.html', html);
   gulp.watch('src/**/*.scss', scss);
   gulp.watch('src/**/*.js', js);
 
