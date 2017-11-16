@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="13px" viewBox="0 0 23 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>connect</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-758.000000, -3469.000000)">
+            <g id="newsSeaboard" transform="translate(-348.000000, 2937.000000)">
+                <g id="caract" transform="translate(1105.000000, 299.000000)">
+                    <g id="connect" transform="translate(0.000000, 233.000000)">
+                        <g id="Group-2" fill-rule="nonzero" fill="#000000">
+                            <path d="M3.54252113,9.74128545 C3.11726187,9.74128545 2.77252113,10.1301666 2.77252113,10.6098759 C2.77252113,11.0895851 3.11726187,11.4784663 3.54252113,11.4784663 L10.4322553,11.4784663 C10.8575146,11.4784663 11.2022553,11.0895851 11.2022553,10.6098759 L11.2022553,2.83798361 C11.2022553,2.35827438 10.8575146,1.9693932 10.4322553,1.9693932 C10.0069961,1.9693932 9.66225533,2.35827438 9.66225533,2.83798361 L9.66225533,9.74128545 L3.54252113,9.74128545 Z" id="Right-Arrow-Copy" transform="translate(6.987388, 6.723930) scale(-1, 1) rotate(-45.000000) translate(-6.987388, -6.723930) "></path>
+                            <path d="M13.8091885,9.74128546 C13.3839293,9.74128546 13.0391885,10.1301666 13.0391885,10.6098759 C13.0391885,11.0895851 13.3839293,11.4784663 13.8091885,11.4784663 L20.6989228,11.4784663 C21.1241821,11.4784663 21.4689228,11.0895851 21.4689228,10.6098759 L21.4689228,2.83798362 C21.4689228,2.35827439 21.1241821,1.96939322 20.6989228,1.96939322 C20.2736635,1.96939322 19.9289228,2.35827439 19.9289228,2.83798362 L19.9289228,9.74128546 L13.8091885,9.74128546 Z" id="Right-Arrow-Copy-2" transform="translate(17.254056, 6.723930) rotate(-45.000000) translate(-17.254056, -6.723930) "></path>
+                        </g>
+                        <g id="Group" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.160000, 6.457269)" stroke="#000000" stroke-width="1.5">
+                            <path d="M0.324210527,0.201923739 L2.56666667,0.201923739" id="Line"></path>
+                            <path d="M4.94421052,0.201923739 L7.18666667,0.201923739" id="Line-Copy"></path>
+                            <path d="M9.56421052,0.201923739 L11.8066667,0.201923739" id="Line-Copy-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
