@@ -13,6 +13,9 @@ var sync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 var pxtorem = require('gulp-pxtorem');
 var plumber = require('gulp-plumber');
+/*var srcset = require ('gulp-srcset');
+var sugar_srcset = require ('gulp-sugar-srcset');*/
+
 
 /////////////
 var postcss = require('gulp-postcss');
@@ -30,10 +33,15 @@ var dist = "dist";
  * HTML
  */
 
+
 function html() {
-  return gulp.src('src/index.html')
-    .pipe(gulp.dest(dist))
-    .pipe(sync.stream());
+    //console.log('sugar')
+    return  gulp.src('src/index.html')
+        /*.pipe(sugar_srcset({
+            responsive : {suffix :'@[match]w'}
+        }))*/
+        .pipe(gulp.dest('dist/'))
+        .pipe(sync.stream());
 }
 
 
@@ -86,6 +94,10 @@ function js() {
 function images() {
   return gulp.src('src/images/**/*')
     .pipe(gulpif(isProd, imagemin({verbose: true})))
+      /*.pipe(srcset([{
+          match:  '(min-width: 320px)',
+          width:  [1, 1920, 1280, 720, 560, 320],
+      }]))*/
     .pipe(gulp.dest(dist + '/images'));
 }
 
