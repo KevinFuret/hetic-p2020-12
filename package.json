@@ -26,7 +26,10 @@
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-srcset": "^1.1.0",
+    "gulp-sugar-srcset": "^0.4.0",
     "gulp-uglify": "^3.0.0",
+    "sharp": "^0.18.4",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
