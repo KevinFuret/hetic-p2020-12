@@ -17,6 +17,8 @@
   height: 50%;
   width: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 
   .gestures__img--content {
     height : 100%;

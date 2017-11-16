@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 500px;
+  min-height: 570px;
   height: 100vh;
   text-align: center;
   overflow: hidden;
@@ -38,16 +38,30 @@
     display: flex;
     background-color: lightgrey;
   }
+  &:nth-child(6) {
 
-}
+  }
+  &:nth-child(7) {
 
-.container__info--bigger {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 500px;
-  height: 120vh;
-  text-align: center;
-  overflow: hidden;
+  }
+  &:nth-child(8) {
+    height: 120vh;
+  }
+  &:nth-child(9) {
+    height: 120vh;
+  }
+  &:nth-child(10) {
+    height: 120vh;
+  }
+  &:nth-child(11) {
+    background: url("../../images/community.jpg") no-repeat;
+    background-size: cover;
+    height: 60vh;
+  }
+  &:nth-child(12) {
+    height: 50vh;
+  }
+  &:nth-child(13) {
+    background-image: linear-gradient(to bottom, #2f4252, #26313a);
+  }
 }

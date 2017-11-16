@@ -1,5 +1,6 @@
 .specs {
   background-image: linear-gradient(to bottom, #26313a, #2f4252);
+  height : 100%;
 }
 
 .specs__titles {
@@ -17,7 +18,43 @@
   height : 30%;
 
   img {
-    width : 100%;
+    height : auto;
+    width : 90%;
     margin : 0% 5% 0% 5%;
   }
+}
+
+.specs__icons {
+  height : 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.specs__icon {
+  position : relative;
+  width : 50%;
+
+  img {
+    width : 90px;
+    opacity : 0.3;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.specs__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height : 15%;
 }

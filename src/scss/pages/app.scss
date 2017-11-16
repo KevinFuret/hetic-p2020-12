@@ -1,5 +1,5 @@
 .app__infos {
-  margin-top : 60px;
+  margin-top : 30px;
 
   p {
     margin : 0% 5% 0% 35%;
@@ -9,6 +9,14 @@
   .app__stores {
     height : 10%;
   }
-  
+}
+
+.app__picture {
+  height : 50%;
+  position : absolute;
+
+  img {
+    height : 543px;
+  }
 }
 

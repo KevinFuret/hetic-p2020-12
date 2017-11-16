@@ -28,6 +28,14 @@
   margin-bottom : 20px;
 }
 
+.general__subtitle--bold--white {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 24px;
+  line-height : 1.4;
+  margin-bottom : 20px;
+}
+
 .general__subtitle--white {
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $white;
@@ -124,7 +132,7 @@
 .specs__text {
   @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
   color : $white;
-  font-size : 16px;
+  font-size : 13px;
   line-height : 1.2;
 }
 
