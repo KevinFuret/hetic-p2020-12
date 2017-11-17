@@ -5,3 +5,16 @@
     margin-bottom : 30px;
   }
 }
+
+.ecosystem__images {
+  height : 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+
+  .ecosystem__image--fix {
+    height : 205px;
+    margin-left : 20%;
+  }
+}
