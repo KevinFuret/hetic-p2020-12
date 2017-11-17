@@ -1,9 +1,9 @@
 .app__infos {
-  height : 50%;
+  height : 40%;
   margin-top : 30px;
 
   p {
-    margin : 0% 5% 0% 35%;
+    margin : 0% 11% 0% 37%;
     text-align: left;
   }
 }
@@ -21,11 +21,14 @@
 }
 
 .app__picture {
-  height : 50%;
-  position : absolute;
+  height : 60%;
+  position : relative;
 
   img {
-    height : 543px;
+    height : 500px;
+    position : absolute;
+    bottom : 16%;
+    left : -45%;
   }
 }
 

@@ -15,7 +15,7 @@
 }
 
 .specs__image {
-  height : 30%;
+  height : 25%;
 
   img {
     height : auto;
@@ -25,7 +25,9 @@
 }
 
 .specs__icons {
-  height : 30%;
+  height : 35%;
+  margin-left : 5%;
+  margin-right : 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -36,7 +38,7 @@
   width : 50%;
 
   img {
-    width : 90px;
+    height : 90px;
     opacity : 0.4;
     position : absolute;
     top : 50%;

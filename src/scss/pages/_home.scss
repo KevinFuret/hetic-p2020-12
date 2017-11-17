@@ -45,7 +45,7 @@
 
   }
   &:nth-child(8) {
-    height: 120vh;
+    height: 145vh;
   }
   &:nth-child(9) {
     height: 120vh;
@@ -57,9 +57,12 @@
     background: url("../../images/community.jpg") no-repeat;
     background-size: cover;
     height: 60vh;
+    min-height: 520px;
+
   }
   &:nth-child(12) {
-    height: 50vh;
+    height: 60vh;
+    min-height: 450px;
   }
   &:nth-child(13) {
     background-image: linear-gradient(to bottom, #2f4252, #26313a);
