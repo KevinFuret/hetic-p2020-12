@@ -14,8 +14,21 @@
   }
 }
 
+.specs__elements {
+
+  @media screen and (min-width: 800px) {
+    height : 400px;
+    display: flex;
+  }
+}
+
 .specs__image {
   height : 25%;
+
+  @media screen and (min-width: 800px) {
+    width : 60%;
+    margin-top : 55px;
+  }
 
   img {
     height : auto;
@@ -31,6 +44,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media screen and (min-width: 700px) {
+    height : 70% ;
+  }
 }
 
 .specs__icon {
@@ -59,4 +76,10 @@
   align-items: center;
   justify-content: center;
   height : 15%;
+}
+
+.specs__right {
+  @media screen and (min-width: 700px) {
+    width : 40% ;
+  }
 }

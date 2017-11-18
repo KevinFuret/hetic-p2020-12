@@ -17,8 +17,8 @@
 }
 
 .button__global {
-  width : 150px;
-  height : 48px;
+  width : 160px;
+  height : 44px;
   border-radius: 5px;
   background-image: $gradient;
 }
@@ -34,6 +34,15 @@
 
 .button__top:hover{
   cursor : pointer;
+}
+
+.button__footer {
+  width : 60px;
+  height : 45px;
+  border: none;
+  border-radius: 5px;
+  background-image: $gradient;
+  margin-right: 15px;
 }
 
 .button__text {

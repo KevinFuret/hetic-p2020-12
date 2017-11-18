@@ -20,6 +20,13 @@
   line-height : 1.4;
 }
 
+.general__subtitle--book--white {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 20px;
+  line-height : 1.4;
+}
+
 .general__subtitle--bold {
   @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
   color : $dark-grey;
@@ -140,12 +147,15 @@
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $white;
   font-size : 12px;
+  letter-spacing : -0.5px;
+  text-align : left;
+  margin-left : 3%;
 }
 
 .newsletter__button {
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $dark-grey;
-  font-size : 14px;
+  font-size : 15px;
 }
 
 .popup__ontext {
