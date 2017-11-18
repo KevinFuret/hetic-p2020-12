@@ -36,7 +36,7 @@ var dist = "dist";
 
 function html() {
     //console.log('sugar')
-    return  gulp.src('src/index.html')
+    return  gulp.src('src/*.html')
         /*.pipe(sugar_srcset({
             responsive : {suffix :'@[match]w'}
         }))*/
@@ -133,7 +133,7 @@ gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done)
   //  proxy: "http://localhost:3000/hetic-p2020-12/dist/"
   });
 
-  gulp.watch('src/index.html', html);
+  gulp.watch('src/*.html', html);
   gulp.watch('src/**/*.scss', scss);
   gulp.watch('src/**/*.js', js);
 

@@ -5,6 +5,17 @@
   background-image: $gradient;
 }
 
+.button__close--round {
+  @extend .button__close;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & svg.close-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .button__global {
   width : 150px;
   height : 48px;
