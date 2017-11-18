@@ -22,13 +22,12 @@
 
 .app__picture {
   height : 60%;
-  position : relative;
+  display: flex;
+  justify-content: center;
 
   img {
     height : 500px;
-    position : absolute;
-    bottom : 16%;
-    left : -45%;
+    margin-top : -12%;
   }
 }
 
