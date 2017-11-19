@@ -1,25 +1,28 @@
+// HOMEPAGE SECTION
+// INTRODUCTION PART
+
 .intro__block--top {
-  display: inherit;
-  height: 50%;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display : inherit;
+  height : 50%;
+  flex-direction : column;
+  justify-content : space-evenly;
 
 }
 
 .intro__block--bottom {
-  display: inherit;
-  flex-direction: column;
-  height: 50%;
-  justify-content: space-between;
+  display : inherit;
+  flex-direction : column;
+  height : 50%;
+  justify-content : space-between;
 
   .intro__img--content {
     width : 290px;
     height : 152px;
     margin : auto;
-    align-content: center;
+    align-content : center;
   }
 
   .intro__subtext {
-    justify-self: flex-end;
+    justify-self : flex-end;
   }
 }

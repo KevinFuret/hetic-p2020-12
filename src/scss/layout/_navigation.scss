@@ -1,17 +1,21 @@
+// HOMEPAGE
+// HEADER
+// MAVIGATION
+
 .header__menu {
   width : 50%;
   margin-left : 20%;
 
   ul {
-    @media screen and (max-width: 700px) {
-      display: none;
+    // Responsive
+    @media screen and (max-width : 700px) {
+      display : none;
     }
 
-    @media screen and (min-width: 700px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+    @media screen and (min-width : 700px) {
+      display : flex;
+      flex-direction : row;
+      justify-content : space-around;
     }
   }
-
 }

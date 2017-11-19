@@ -21,11 +21,13 @@
   }
 }
 
+// BODY
 body {
-    display: flex;
+  display : flex;
+
   & .container {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
+    width : 100%;
+    overflow-x : hidden;
+    margin : 0 auto;
   }
 }

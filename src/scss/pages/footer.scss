@@ -1,11 +1,14 @@
+// HOMEPAGE
+// FOOTER SECTION
+
 .footer {
    height : 100%;
    display : flex;
    justify-content : space-around;
 
    h1 {
-      line-height: 1;
-      margin-bottom: 0px;
+      line-height : 1;
+      margin-bottom : 0px;
       margin-top : 10px;
    }
 }
@@ -22,16 +25,12 @@
 
  .footer__socials{
     display : flex;
-    justify-content: space-around;
+    justify-content : space-around;
     width : 300px;
     margin : 0 auto;
     .footer__social {
        width : 44px;
        height : 44px;
-       background-color: white;
+       background-color : white;
     }
- }
-
- .copyright__text {
-    
  }

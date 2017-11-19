@@ -1,29 +1,33 @@
-.gestures__slider {
-  height: 20%;
-  display: inherit;
-  align-items: center;
-  justify-content: center;
+// HOMEPAGE
+// GESTURES SECTION
 
-  @media screen and (min-width: 700px) {
-    width: 80%;
+.gestures__slider {
+  height : 20%;
+  display : inherit;
+  align-items : center;
+  justify-content : center;
+
+  // Responsive
+  @media screen and (min-width : 700px) {
+    width : 80%;
     margin : 0 auto;
   }
 
   ul {
-    justify-content: space-around;
-    width: 100%;
-    display: inherit;
-    flex-direction: row;
+    justify-content : space-around;
+    width : 100%;
+    display : inherit;
+    flex-direction : row;
   }
 }
 
 .gestures__img {
-  text-align: center;
-  height: 50%;
-  width: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
+  text-align : center;
+  height : 50%;
+  width : auto;
+  position : relative;
+  display : flex;
+  justify-content : center;
 
   .gestures__img--content {
     height : 100%;
@@ -33,26 +37,27 @@
 .gestures__choices {
   height : 30%;
   display: flex;
-  flex-direction: column;
+  flex-direction : column;
   padding : 0px 50px 0px 50px;
 
-  @media screen and (min-width: 700px) {
+  // Responsive
+  @media screen and (min-width : 700px) {
     width: 50%;
     margin : 0 auto;
   }
 
   .gestures__choices--top {
     height : 50%;
-    display: inherit;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+    display : inherit;
+    justify-content : space-around;
+    align-items : center;
+    margin-top : 20px;
   }
 
   .gesture__choices--bottom {
     height : 20%;
-    display: inherit;
-    justify-content: space-around;
-    align-items: baseline;
+    display : inherit;
+    justify-content : space-around;
+    align-items : baseline;
   }
 }

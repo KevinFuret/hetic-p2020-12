@@ -1,51 +1,57 @@
+// HOMEPAGE
+// ORDER SECTION
+
 .order__block--top {
-  padding: 30px 30px 20px 30px;
-  height: 25vh;
-  display: flex;
+  padding : 30px 30px 20px 30px;
+  height : 25vh;
+  display : flex;
   align-items : flex-end;
-  justify-content: center;
+  justify-content : center;
 }
 
 .order__block--bottom {
-  display: inherit;
-  height: 75vh;
-  flex-direction: row;
+  display : inherit;
+  height : 75vh;
+  flex-direction : row;
 }
 
 .order__img--left {
-  position: relative;
-  width: 45%;
-  height: 100%;
+  position : relative;
+  width : 45%;
+  height : 100%;
 
-  @media screen and (min-width: 700px) {
-    width: 60%;
+  // Responsive
+  @media screen and (min-width : 700px) {
+    width : 60%;
   }
 
   .order__img--content {
-    position: absolute;
-    right: 20%;
+    position : absolute;
+    right : 20%;
   }
 }
 
 .order__list--right {
-  display: flex;
-  width: 55%;
+  display : flex;
+  width : 55%;
 
-  @media screen and (min-width: 700px) {
-    width: 40%;
+  // Responsive
+  @media screen and (min-width : 700px) {
+    width : 40%;
   }
 
   .order__list--items {
-    align-items: flex-end;
-    width: 100%;
-    height: 80%;
-    display: inherit;
-    text-align: left;
-    justify-content: space-around;
-    flex-direction: column;
+    align-items : flex-end;
+    width : 100%;
+    height : 80%;
+    display : inherit;
+    text-align : left;
+    justify-content : space-around;
+    flex-direction : column;
     font-size : 14px;
     line-height : 17px;
 
+    // Responsive
     @media screen and (min-width: 700px) {
       height: 90%;
     }
@@ -53,16 +59,16 @@
 }
 
 .order__item {
-  align-items: center;
-  vertical-align: middle;
-  display: inherit;
-  flex-direction: row;
-  width: 100%;
+  align-items : center;
+  vertical-align : middle;
+  display : inherit;
+  flex-direction : row;
+  width : 100%;
 
   img {
-    margin-right: 20px;
-    width: 18px;
-    height: 20px;
-    margin-bottom: 5px;
+    margin-right : 20px;
+    width : 18px;
+    height : 20px;
+    margin-bottom : 5px;
   }
 }

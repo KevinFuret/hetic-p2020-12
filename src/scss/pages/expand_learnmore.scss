@@ -1,91 +1,120 @@
-.page-expand {
-  display: flex;
-  flex-direction: column;
-  & .container {
-    height: auto;
-  }
-  & .controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-  }
-  & .price {
-    margin-top: 10px;
-    font-size: 1.6rem;
-  }
-  & .intro {
-    background: grey;
-    padding: 30px 35px 18px 35px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &.inverted {
-      text-align: center;
-      & .general__title {
-        color: $white;
+// POPUP
+// LEARN MORE ABOUT ECOSYSTEM
 
+.page-expand {
+  display : flex;
+  flex-direction : column;
+
+  & .container {
+    height : auto;
+  }
+
+  & .controls {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding-bottom : 20px;
+  }
+
+  & .price {
+    margin-top : 10px;
+    font-size : 1.6rem;
+  }
+
+  & .intro {
+    background : grey;
+    padding : 30px 35px 18px 35px;
+    min-height : 200px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+
+    &.inverted {
+      text-align : center;
+
+      & .general__title {
+        color : $white;
       }
+
       & .general__text.intro__subtext {
-        color: $white;
-        font-size: 1.5rem;
+        color : $white;
+        font-size : 1.5rem;
       }
     }
   }
+
   & .item__block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : space-between;
+    padding : 40px 0;
+
+    // Responsive
+    @media screen and (min-width : 700px) {
+      width : 700px;
+      margin : 0 auto;
+    }
 
     & img {
-      transition: transform 0.3s;
+      transition : transform 0.3s;
     }
 
     & > * {
-      flex: 1;
+      flex : 1;
     }
 
     & img {
-      @media screen and (min-width: 800px) {
-        transform: rotate(-30deg);
+
+      // Reponsive
+      @media screen and (min-width : 800px) {
+        transform : rotate(-30deg);
       }
     }
 
     &.reverse {
-      flex-direction: row-reverse;
+      flex-direction : row-reverse;
+
       & img {
-        @media screen and (min-width: 800px) {
-          transform: rotate(30deg);
+
+        // Responsive
+        @media screen and (min-width : 800px) {
+          transform : rotate(30deg);
         }
       }
+
       & .item__block--content {
         padding: 0 10px 0 0;
       }
     }
+
     & .general__subtitle--bold {
-      margin-bottom: 5px;
+      margin-bottom : 5px;
     }
+
     & .general__subtitle--book {
-      margin-bottom: 5px;
+      margin-bottom : 5px;
     }
+
     &--content {
-      padding-left: 20px;
+      padding-left : 20px;
     }
+
     &--image {
-      height: 229px;
-      text-align: center;
+      height : 229px;
+      text-align : center;
+
       & img {
-        height: 100%;
+        height : 100%;
       }
+
       &.cut {
+
         img {
-          transform: translateX(40px);
-          @media screen and (min-width: 800px) {
-            transform: translateX(0);
+          transform : translateX(40px);
+          @media screen and (min-width : 800px) {
+            transform : translateX(0);
           }
         }
       }
