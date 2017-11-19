@@ -33,6 +33,10 @@
   }
   &:nth-child(4) {
     padding: 70px 0px 0px 0px;
+
+    @media screen and (min-width: 700px) {
+      margin-bottom : 100px;
+    }
   }
   &:nth-child(5) {
     display: flex;
@@ -45,13 +49,25 @@
 
   }
   &:nth-child(8) {
-    height: 135vh;
+     height : 135vh;
+
+    @media screen and (min-width: 700px) {
+      height: 100vh;
+      display: flex;
+      flex-wrap : wrap;
+      align-items: center;
+    }
+
   }
   &:nth-child(9) {
     height: 120vh;
   }
   &:nth-child(10) {
     height: 120vh;
+
+    @media screen and (min-width: 700px) {
+      height: 80vh;
+    }
   }
   &:nth-child(11) {
     background: url("../../images/community.jpg") no-repeat;
@@ -68,5 +84,9 @@
     height: 50vh;
     min-height: 330px;
     background-image: linear-gradient(to bottom, #2f4252, #26313a);
+
+    @media screen and (min-width: 700px) {
+      height: 70vh;
+    }
   }
 }

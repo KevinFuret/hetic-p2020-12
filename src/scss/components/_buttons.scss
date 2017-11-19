@@ -16,15 +16,8 @@
   }
 }
 
-.button__global {
-  width : 160px;
-  height : 44px;
-  border-radius: 5px;
-  background-image: $gradient;
-}
-
 .button__top {
-  width : 150px;
+  width : 140px;
   height : 45px;
   border: none;
   border-radius: 5px;
@@ -33,6 +26,19 @@
 }
 
 .button__top:hover{
+  cursor : pointer;
+}
+
+.button__big {
+  width : 160px;
+  height : 45px;
+  border: none;
+  border-radius: 5px;
+  background-image: $gradient;
+  margin-right: 15px;
+}
+
+.button__big:hover{
   cursor : pointer;
 }
 

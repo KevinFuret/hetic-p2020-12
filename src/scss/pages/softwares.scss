@@ -30,7 +30,6 @@
   }
 }
 
-
 .softwares__infos {
   height : 30%;
   display: flex;
@@ -38,16 +37,10 @@
   justify-content: center;
   flex-direction: column;
   padding : 0px 20px 0px 20px;
-
 }
 
 .softwares__button {
   height : 10%;
-
-  .demo__button {
-    width: 180px;
-    margin: 0;
-  }
 }
 
 .softwares__space{
@@ -59,4 +52,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (min-width: 700px) {
+    width : 70%;
+    margin : 0 auto;
+  }
 }

@@ -18,15 +18,33 @@
   width: 45%;
   height: 100%;
 
+  @media screen and (min-width: 700px) {
+    width : 55%;
+  }
+
+  img {
+    @media screen and (min-width: 700px) {
+      height: 100%;
+    }
+  }
+
   .features__img--content {
     position: absolute;
     right: 20%;
+
+    @media screen and (min-width: 700px) {
+      right : 10%;
+    }
   }
 }
 
 .features__list--right {
   display: flex;
   width: 55%;
+
+  @media screen and (min-width: 700px) {
+    width : 45%;
+  }
 
   .features__list--items {
     align-items: flex-end;

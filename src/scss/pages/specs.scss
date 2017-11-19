@@ -1,6 +1,7 @@
 .specs {
   background-image: linear-gradient(to bottom, #26313a, #2f4252);
   height : 100%;
+
 }
 
 .specs__titles {
@@ -9,6 +10,10 @@
   flex-direction : column;
   justify-content : center;
 
+  @media screen and (min-width: 700px) {
+    height : 35%;
+  }
+
   h1 {
     margin-bottom : 20px;
   }
@@ -16,7 +21,7 @@
 
 .specs__elements {
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     height : 400px;
     display: flex;
   }
@@ -25,28 +30,36 @@
 .specs__image {
   height : 25%;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     width : 60%;
     margin-top : 55px;
   }
 
   img {
-    height : auto;
-    width : 90%;
-    margin : 0% 5% 0% 5%;
+
+    @media screen and (max-width: 700px) {
+      width : 300px;
+    }
+
+    @media screen and (min-width: 700px) {
+      height : auto;
+      width : 90%;
+      margin : 0% 5% 0% 5%;
+    }
   }
 }
 
 .specs__icons {
-  height : 35%;
-  margin-left : 5%;
-  margin-right : 5%;
+
+  height: 290px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  margin: 0 12%;
 
   @media screen and (min-width: 700px) {
     height : 70% ;
+    margin: 0;
   }
 }
 
@@ -76,9 +89,15 @@
   align-items: center;
   justify-content: center;
   height : 15%;
+  margin-top: 20px;
 }
 
 .specs__right {
+
+  @media screen and (max-width: 700px) {
+    margin-top : 20px;
+  }
+
   @media screen and (min-width: 700px) {
     width : 40% ;
   }

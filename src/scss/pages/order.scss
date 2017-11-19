@@ -3,6 +3,7 @@
   height: 25vh;
   display: flex;
   align-items : flex-end;
+  justify-content: center;
 }
 
 .order__block--bottom {
@@ -16,6 +17,10 @@
   width: 45%;
   height: 100%;
 
+  @media screen and (min-width: 700px) {
+    width: 60%;
+  }
+
   .order__img--content {
     position: absolute;
     right: 20%;
@@ -26,16 +31,24 @@
   display: flex;
   width: 55%;
 
+  @media screen and (min-width: 700px) {
+    width: 40%;
+  }
+
   .order__list--items {
     align-items: flex-end;
     width: 100%;
-    height: 70%;
+    height: 80%;
     display: inherit;
     text-align: left;
     justify-content: space-around;
     flex-direction: column;
     font-size : 14px;
     line-height : 17px;
+
+    @media screen and (min-width: 700px) {
+      height: 90%;
+    }
   }
 }
 
