@@ -146,6 +146,22 @@
   line-height : 1.2;
 }
 
+.specs__subtitle {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 16px;
+  line-height : 3;
+  text-align: left;
+}
+
+.specs__little {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 13px;
+  line-height : 1.5;
+  text-align: left;
+}
+
 .copyright__text {
   @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
   color : $white;

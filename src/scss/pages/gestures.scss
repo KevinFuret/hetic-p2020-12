@@ -46,6 +46,11 @@
     margin : 0 auto;
   }
 
+  @media screen and (min-width : 800px) {
+    width: 45%;
+    margin : 0 auto;
+  }
+
   .gestures__choices--top {
     height : 50%;
     display : inherit;

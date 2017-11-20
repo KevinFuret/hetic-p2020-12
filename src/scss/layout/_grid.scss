@@ -31,3 +31,19 @@ body {
     margin : 0 auto;
   }
 }
+
+.content__large {
+
+  // Responsive
+  @media screen and (min-width : 700px) {
+    width : 700px;
+    height : 100%;
+    margin : 0 auto;
+  }
+
+  @media screen and (min-width : 800px) {
+    width : 800px;
+    height : 100%;
+    margin : 0 auto;
+  }
+}
