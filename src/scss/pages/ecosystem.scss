@@ -4,13 +4,18 @@
 .ecosystem__infos{
   height : 33%;
 
+  // Responsive
+  @media screen and (min-width : 700px) {
+    height : 25%;
+  }
+
   h1 {
     margin-bottom : 30px;
   }
 }
 
 .ecosystem__images {
-  height : 65%;
+  height : 75%;
   display : flex;
   align-items : flex-end;
   justify-content : center;
@@ -18,5 +23,11 @@
   .ecosystem__image--fix {
     height : 205px;
     margin-left : 20%;
+
+    // Responsive
+    @media screen and (min-width : 700px) {
+      margin-left : 00%;
+      height : 220px;
+    }
   }
 }
