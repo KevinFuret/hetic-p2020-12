@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "browserify": "^14.4.0",
-    "gulp-pxtorem": "^3.0.0"
+    "gulp-pxtorem": "^3.0.0",
+    "headroom.js": "^0.9.4"
   }
 }
