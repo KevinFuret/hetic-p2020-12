@@ -4,8 +4,8 @@ export default function(event) {
     for (var i = 0; i <= buttons.length-1; i++) {
         console.log(buttons[i]);
         buttons[i].addEventListener('click', (e) => {
-
-            alert(buttons[i].getAttribute('data-popin'));
+            console.log(e.target);
+            alert(e.target.closest('button').dataset.popin);
             /*const url = e.target.getAttribute('data-popin') // 'fichier-1.html'
 
             fetch(url)
