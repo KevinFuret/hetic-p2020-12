@@ -6,17 +6,17 @@ export default function(event) {
         buttons[i].addEventListener('click', (e) => {
             console.log(e.target);
             alert(e.target.closest('button').dataset.popin);
-            /*const url = e.target.getAttribute('data-popin') // 'fichier-1.html'
+            const url = e.target.closest('button').dataset.popin;
 
             fetch(url)
                 .then(response => response.text())
                 .then((data) => {
-                    const div = document.createElement('div')
-                    div.innerHTML = data
-                    div.setAttribute('test', true)
-                    div.classList.add('mySuperClass')
-                    document.querySelector('.myclass').appendChild = div
-                })*/
+                    const div = document.createElement('div');
+                    div.innerHTML = data;
+                    //div.setAttribute('test', true)
+                    //div.classList.add('mySuperClass')
+                    document.querySelector('.popin').appendChild = div;
+                })
         })
     }
 
