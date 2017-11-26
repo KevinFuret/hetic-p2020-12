@@ -1,7 +1,12 @@
-import menu from './menu.js';
 import popup from "./popup.js";
+import Headroom from "headroom.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  menu();
   popup();
+
+    console.log(Headroom);
+    var header = document.querySelector(".header");
+    var headroom  = new Headroom(header);
+    headroom.init();
+
 });
