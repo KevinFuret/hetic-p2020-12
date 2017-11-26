@@ -7,9 +7,9 @@
 
   @if $raw-query {
     $query: if(
-      type-of($raw-query) == 'string',
-      unquote($raw-query),
-      inspect($raw-query)
+                    type-of($raw-query) == 'string',
+                    unquote($raw-query),
+                    inspect($raw-query)
     );
 
     @media #{$query} {
@@ -54,5 +54,19 @@ body {
   @media screen and (min-width : 900px) {
     width : 90%;
     margin : 0 auto;
+  }
+}
+
+.visible-desktop {
+  display: none;
+  @media screen and (min-width : 800px) {
+    display: block;
+  }
+}
+
+.visible-mobile {
+  display: block;
+  @media screen and (min-width : 800px) {
+    display: none;
   }
 }
