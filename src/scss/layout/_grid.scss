@@ -59,6 +59,8 @@ body {
 
 .visible-desktop {
   display: none;
+
+  // Responsive
   @media screen and (min-width : 800px) {
     display: block;
   }
@@ -66,7 +68,21 @@ body {
 
 .visible-mobile {
   display: block;
+
+  // Responsive
   @media screen and (min-width : 800px) {
     display: none;
+  }
+}
+
+.container_popup {
+  width : 100%;
+  overflow-x : hidden;
+  margin : 0 auto;
+
+  @media screen and (min-width : 800px) {
+    width: 90%;
+    overflow-x: hidden;
+    margin: 0 auto;
   }
 }

@@ -2,22 +2,26 @@
 // TECH SPECS PAGE
 
 .techspecs__page {
-  background: #2f4252;
-  flex: 1;
-  min-height: 100vh;
+  background : #2f4252;
+  flex : 1;
+  min-height : 100vh;
+
   article {
     width : 100%;
   }
+
   .controls {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
+    padding : 40px;
+    display : flex;
+    justify-content : center;
   }
+
   .specs__titles {
-    padding: 40px;
-    height: auto;
+    padding : 40px;
+    height : auto;
+
     h3 {
-      margin: 0;
+      margin : 0;
     }
   }
 }
@@ -25,12 +29,11 @@
 .techspecs__image {
   display : flex;
   align-items : center;
+
   img {
-    margin: 0 auto;
-    align-self: end;
+    margin : 0 auto;
+    align-self : end;
   }
-  //margin-left : 140px;
-  //margin-top : 130px;
 }
 
 .techspecs__container {
@@ -45,48 +48,43 @@
 }
 
 .techspecs__each {
-  width: 100%;
-  text-align: center;
+  width : 100%;
+  text-align : center;
+
+  // Responsive
   @media screen and (min-width: 700px) {
-    text-align: left;
-    margin-left: 40px;
+    text-align : left;
+    margin-left : 40px;
   }
   h4,.specs__little {
     text-align: center;
+
+    // Responsive
     @media screen and (min-width: 700px) {
-      text-align: left;
-      margin-left: 40px;
+      text-align : left;
+      margin-left : 40px;
     }
   }
 }
 
 .techspecs__outer {
-  display: flex;
-  flex-direction: column;
+  display : flex;
+  flex-direction : column;
+
+  // Responsive
   @media screen and (min-width: 700px) {
-    flex-direction: row;
-    text-align: left;
+    flex-direction : row;
+    text-align : left;
   }
   .techspecs__each {
+
+    // Responsive
     @media screen and (min-width: 700px) {
       margin-left: 40px;
+
       &:first-of-type {
         margin-left: 0;
       }
     }
   }
 }
-
-//.techspecs__right {
-//  display : flex;
-//  position : absolute;
-//  flex-wrap : nowrap;
-//  margin-top : 350px;
-//  width : 800px;
-//  margin-left: 15px;
-//  justify-content : flex-end;
-//
-//  .techspecs__each {
-//    margin : 0px 40px;
-//  }
-//}
