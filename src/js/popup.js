@@ -13,7 +13,7 @@ export default function(event) {
                     div.innerHTML = data;
                     //div.setAttribute('test', true)
                     //div.classList.add('mySuperClass')
-                    document.querySelector('.popin').appendChild = div;
+                    document.querySelector('.popin').appendChild(div);
                 })
         })
     }
