@@ -7,6 +7,9 @@
 
 .page-equator {
   text-align : center;
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
   & .text__align--left {
     text-align : left;
   }

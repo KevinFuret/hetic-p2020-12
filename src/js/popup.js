@@ -1,9 +1,9 @@
 export default function(event) {
-    var buttons = document.getElementsByClassName('popup-button');
-    for (var i = 0; i <= buttons.length-1; i++) {
+    const buttons = document.getElementsByClassName('popup-button');
+    let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+
+    for (let i = 0; i <= buttons.length-1; i++) {
         buttons[i].addEventListener('click', (e) => {
-            console.log(e.target);
-            alert(e.target.closest('button').dataset.popin);
             const url = e.target.closest('button').dataset.popin;
 
             fetch(url)
@@ -14,12 +14,18 @@ export default function(event) {
                     //div.setAttribute('test', true)
                     //div.classList.add('mySuperClass')
                     document.querySelector('.popin').appendChild(div);
+                    fermeturePopup();
                 })
         })
     }
 
-    /*close.addEventListerner('click', (e) => {
-        document.querySelector('.test').remove()
-    })*/
+    function fermeturePopup(){
+        const close = document.querySelector('.button__close--round');
 
+        console.log(close);
+
+        close.addEventListener('click', (e) => {
+            document.querySelector('.popin').remove();
+        })
+    }
 }
