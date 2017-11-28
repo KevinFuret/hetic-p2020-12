@@ -1,24 +1,24 @@
-export default function(event) {
-    const buttons = document.getElementsByClassName('popup-button');
+export default () => {
     let scrollPos = window.pageYOffset;
-
-    for (let i = 0; i <= buttons.length-1; i++) {
-        buttons[i].addEventListener('click', (e) => {
-            const url = e.target.closest('button').dataset.popin;
-
-            fetch(url)
+    document.querySelectorAll('.popup-button').forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            fetch(button.getAttribute('data-popin'))
                 .then(response => response.text())
                 .then((data) => {
-                    const div = document.createElement('div');
-                    div.innerHTML = data;
-                    //div.setAttribute('test', true)
-                    //div.classList.add('mySuperClass')
-                    document.querySelector('.popin').appendChild(div);
+                    const popinContent = document.createElement('div');
+                    popinContent.innerHTML = data;
+
+                    document.querySelector('.popin').appendChild(popinContent);
                     document.querySelector('body').classList.add('popin-open');
                     fermeturePopup();
                 })
+                .then((error) => {
+                console.error(error);
+                document.querySelector('body').classList.remove('popin-open');
+                })
         })
-    }
+    })
 
     function fermeturePopup(){
         const close = document.querySelector('.button__close--round');
@@ -27,6 +27,7 @@ export default function(event) {
 
         close.addEventListener('click', (e) => {
             document.querySelector('.popin').remove();
+            document.querySelector('body').classList.remove('popin-open');
         })
     }
 }
