@@ -15,7 +15,6 @@ export default () => {
                 })
                 .then((error) => {
                 console.error(error);
-                document.querySelector('body').classList.remove('popin-open');
                 })
         })
     })
