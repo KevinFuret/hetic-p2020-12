@@ -1,6 +1,6 @@
 export default function(event) {
     const buttons = document.getElementsByClassName('popup-button');
-    let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+    let scrollPos = window.pageYOffset;
 
     for (let i = 0; i <= buttons.length-1; i++) {
         buttons[i].addEventListener('click', (e) => {
