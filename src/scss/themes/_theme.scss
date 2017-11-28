@@ -3,7 +3,9 @@
 }
 
 .popin {
+  display: none;
   overflow: scroll;
   position: fixed;
   height: 100vh;
+  transition: 0.2s all ease-in-out;
 }
