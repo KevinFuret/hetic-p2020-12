@@ -14,6 +14,7 @@ export default function(event) {
                     //div.setAttribute('test', true)
                     //div.classList.add('mySuperClass')
                     document.querySelector('.popin').appendChild(div);
+                    document.querySelector('body').classList.add('popin-open');
                     fermeturePopup();
                 })
         })
