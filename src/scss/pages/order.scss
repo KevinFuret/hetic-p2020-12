@@ -17,28 +17,33 @@
 
 .order__img--left {
   position : relative;
-  width : 45%;
+  width : 50%;
   height : 100%;
 
   // Responsive
   @media screen and (min-width : 700px) {
-    width : 60%;
+    width : 55%;
   }
 
   .order__img--content {
     position : absolute;
     right : 20%;
-    bottom: -20px;
+    height : 80%;
+
+    // Responsive
+    @media screen and (min-width : 700px) {
+      height : 90%;
+    }
   }
 }
 
 .order__list--right {
   display : flex;
-  width : 55%;
+  width : 50%;
 
   // Responsive
   @media screen and (min-width : 700px) {
-    width : 40%;
+    width : 45%;
   }
 
   .order__list--items {
