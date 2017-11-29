@@ -2,11 +2,11 @@
 // ECOSYSTEM SECTION
 
 .ecosystem__infos{
-  height : 33%;
+  height : 35%;
 
   // Responsive
-  @media screen and (min-width : 700px) {
-    height : 25%;
+  @media screen and (min-width : 500px) {
+    height : 40%;
   }
 
   h1 {
@@ -14,63 +14,43 @@
   }
 }
 
-.ecosystem__images {
-  height : 75%;
+.ecosystem__images--mobile {
+  height : 60%;
   display : flex;
   align-items : flex-end;
   justify-content : center;
   position : relative;
 
+  // Responsive
+  @media screen and (min-width : 500px) {
+    display : none;
+  }
+
   .ecosystem__image--fix {
-    height : 270px;
-    margin-left : 20%;
+    width : 100%;
 
     // Responsive
-    @media screen and (min-width : 700px) {
+    @media screen and (min-width : 500px) {
       margin-left : 00%;
       height : 220px;
     }
   }
+}
 
-  .ecosystem__image--move {
-    position : absolute;
-    height : 150px;
+.ecosystem__image--large {
+  display: none;
+  height : 60%;
+
+  // Responsive
+  @media screen and (min-width : 500px) {
+    display : flex;
+
   }
-}
 
-.ecosystem__image--move:nth-child(1) {
-  bottom : 164px;
-  left : 13%;
-  height : 190px;
-}
-
-.ecosystem__image--move:nth-child(2) {
-  top : 119px;
-  left : 45%;
-}
-
-.ecosystem__image--move:nth-child(3) {
-  right : -65px;
-  bottom : 170px;
-}
-
-.ecosystem__image--moving {
-  position : absolute;
-  height : 150px;
-}
-
-.ecosystem__image--moving:nth-child(1) {
-  bottom : 164px;
-  left : 13%;
-  height : 190px;
-}
-
-.ecosystem__image--moving:nth-child(2) {
-  top : 119px;
-  left : 45%;
-}
-
-.ecosystem__image--moving:nth-child(3) {
-  right : -65px;
-  bottom : 170px;
+  img {
+    padding-top : 5%;
+    height : 60%;
+    width : auto;
+    margin : 0 auto;
+  }
 }
