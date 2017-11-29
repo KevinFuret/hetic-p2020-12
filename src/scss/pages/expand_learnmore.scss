@@ -4,6 +4,9 @@
 .page-expand {
   display : flex;
   flex-direction : column;
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
 
   & .container {
     height : auto;

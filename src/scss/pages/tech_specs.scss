@@ -5,7 +5,9 @@
   background : #2f4252;
   flex : 1;
   min-height : 100vh;
-
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
   article {
     width : 100%;
   }

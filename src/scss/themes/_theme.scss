@@ -8,4 +8,7 @@
   position: fixed;
   height: 100vh;
   transition: 0.2s all ease-in-out;
+  top:0;
+  left:0;
+  z-index: 1000;
 }
