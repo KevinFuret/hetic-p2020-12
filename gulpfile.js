@@ -13,9 +13,7 @@ var sync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 var pxtorem = require('gulp-pxtorem');
 var plumber = require('gulp-plumber');
-/*var srcset = require ('gulp-srcset');
-var sugar_srcset = require ('gulp-sugar-srcset');*/
-
+var srcset = require('gulp-srcset');
 
 /////////////
 var postcss = require('gulp-postcss');
@@ -94,11 +92,6 @@ function js() {
 
 function images() {
   return gulp.src('src/images/**/*')
-    .pipe(gulpif(isProd, imagemin({verbose: true})))
-      /*.pipe(srcset([{
-          match:  '(min-width: 320px)',
-          width:  [1, 1920, 1280, 720, 560, 320],
-      }]))*/
     .pipe(gulp.dest(dist + '/images'));
 }
 
@@ -112,7 +105,14 @@ function fonts() {
     .pipe(gulp.dest(dist + '/fonts'));
 }
 
-
+function generateImages() {
+    return gulp.src('src/images/**/*')
+        .pipe(imagemin())
+        .pipe(srcset([{
+            width:  [1, 1080, 720, 320],
+        }]))
+        .pipe(gulp.dest(dist + '/images'));
+}
 
 /**
  * GLOBAL
@@ -125,7 +125,9 @@ function clean() {
 
 gulp.task('clean', clean);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, headers)));
+gulp.task('generateImages', generateImages);
+
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, generateImages, fonts, headers)));
 
 gulp.task('default', gulp.parallel(html, scss, js, images, fonts, headers, function(done) {
   sync.init({
