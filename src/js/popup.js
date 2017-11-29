@@ -10,7 +10,7 @@ export default () => {
                     popinContent.classList.add('popin-div');
                     document.querySelector('.popin').appendChild(popinContent);
                     console.log(document.querySelector('.popin'));
-                    document.querySelector('.popin').style.display = "block";
+                    //document.querySelector('.popin').style.display = "block";
                     document.querySelector('body').classList.add('popin-open');
                     fermeturePopup();
                 })
