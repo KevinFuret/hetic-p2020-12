@@ -13,7 +13,6 @@ var sync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 var pxtorem = require('gulp-pxtorem');
 var plumber = require('gulp-plumber');
-var critical = require('critical');
 /*var srcset = require ('gulp-srcset');
 var sugar_srcset = require ('gulp-sugar-srcset');*/
 
@@ -41,8 +40,8 @@ function html() {
         .pipe(sync.stream());
 }
 
-function htaccess() {
-    return  gulp.src('src/.htaccess')
+function headers() {
+    return  gulp.src('src/_headers')
         .pipe(gulp.dest('dist/'))
         .pipe(sync.stream());
 }
@@ -126,9 +125,9 @@ function clean() {
 
 gulp.task('clean', clean);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, htaccess)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, headers)));
 
-gulp.task('default', gulp.parallel(html, scss, js, images, fonts, htaccess, function(done) {
+gulp.task('default', gulp.parallel(html, scss, js, images, fonts, headers, function(done) {
   sync.init({
      server: {
     baseDir: 'dist'
