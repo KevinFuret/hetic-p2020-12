@@ -6,7 +6,11 @@
   display : inherit;
   justify-content : space-between;
   align-items : center;
-  height : 20%;
+  height : 25%;
+
+  @media screen and (min-width : 700px) {
+    width : 45%;
+  }
 
   .demo__button {
     width : 180px;
