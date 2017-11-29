@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Accueil</title>
+        <script defer src="https://hammerjs.github.io/dist/hammer.js"></script>
+        <script defer src="./js/index.js"></script>
+    </head>
+    <!-- End Head -->
+
+    <body class="accueil">
+
+      <!-- HEADER -->
+      <nav class="header">
+          <section class="header__main header__desktop">
+
+              <!-- Logo -->
+              <div class="logo">
+                  <a href="#">
+                      <img src="./images/logo.png" alt=""/>
+                  </a>
+              </div>
+
+              <!-- Menu -->
+              <div class="header__menu general__text">
+                  <nav>
+                      <ul>
+                          <li><a href="#seaboard" class="header__link">Seaboard Block</a></li>
+                          <li><a href="#softwares" class="header__link">Softwares</a></li>
+                          <li><a href="#specs" class="header__link">Tech specs</a></li>
+                      </ul>
+                  </nav>
+              </div>
+
+              <!-- Button -->
+              <button class="button__big">
+                  <div class="button__text">
+                    <span class="general__button--light">
+                        BUY
+                    </span>
+                    <span class="general__button">
+                        329,95€
+                    </span>
+                  </div>
+              </button>
+
+          </section>
+      </nav>
+      <!-- End HEADER -->
+
+      <!-- CONTAINER -->
+      <section class="popin">
+
+      </section>
+      <section class="container">
+
+          <!-- INTRODUCTION -->
+          <article class="container__info intro__section">
+
+              <!-- Top text -->
+              <div class="intro__block--top">
+                  <div>
+                      <h1 class="general__title">Seaboard</h1>
+                      <h2 class="general__title">Music at your fingertips</h2>
+                      <h3 class="general__subtitle--book">Keep in touch with your music</h3>
+                  </div>
+              </div>
+
+              <!-- Image + bottom text -->
+              <div class="intro__block--bottom">
+                  <div class="intro__img">
+
+                      <img class="intro__img--content" src="./images/block.png" alt="block" srcset="./images/block.png 320w,
+       ./images/block.png 720w,
+       ./images/block.png 1080w"
+                           sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”>
+">
+                  </div>
+                  <div class="intro__finger">
+                      <div class="intro__circle"></div>
+                      <div class="intro__circle2"></div>
+                      <div class="intro__circle3"></div>
+                      <div class="intro__circle4"></div>
+                  </div>
+                  <p class="general__text intro__subtext">Play your sound with an intuitively and  sensitive approach. <br> Discover as yet unexplored sonic territories.</p>
+              </div>
+
+          </article>
+          <!-- End INTRODUCTION -->
+
+          <!-- DEMO VIDEO -->
+          <article class="container__info video__section">
+
+              <div class="wrapper">
+                  <div class="youtube" data-embed="6SCug5kUsBs">
+                      <div class="demo__block--top">
+                          <h1 class="general__title--white">Introducing Seaboard Block</h1>
+                          <button class="button__top demo__button">
+                              <div class="button__text">
+                                  <span class="general__button--light ">
+                                      Watch the demo
+                                  </span>
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+          </article>
+          <!-- End DEMO VIDEO -->
+
+          <!-- FEATURES -->
+          <article class="container__info features__section">
+
+              <!-- Top introduction text -->
+              <div class="features__block--top">
+                  <h1 class="general__title">New Seaboard Block</h1>
+                  <h3 class="general__subtitle--book">
+                      Expressive and expandable. <br> A revolution in your creative journey
+                  </h3>
+              </div>
+
+              <!-- Bottom part -->
+              <div class="features__block--bottom">
+
+                  <!-- Image -->
+                  <div class="features__img--left">
+                      <img class="features__img--content" src="./images/block.png" alt="block" srcset="./images/block.png 320w,
+       ./images/block.png 720w,
+       ./images/block.png 1080w"
+                           sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”>
+">
+                  </div>
+
+                  <!-- Features list -->
+                  <div class="features__list--right">
+                      <ul class="features__list--items general__text">
+                          <li class="features__item">
+                              <img src="./images/features_5D.svg" alt="">
+                              <span>5D Technologie</span>
+                          </li>
+                          <li class="features__item">
+                              <img src="./images/features_keywave.svg" alt="">
+                              <span>24 keywave, two octave playing</span>
+                          </li >
+                          <li class="features__item">
+                              <img src="./images/features_sound.svg" alt="">
+                              <span>200 + free sounds</span>
+                          </li>
+                          <li class="features__item">
+                              <img src="./images/features_wireless.svg" alt="">
+                              <span>Wireless and portable</span>
+                          </li>
+                          <li class="features__item">
+                              <img src="./images/features_connect.svg" alt="">
+                              <span>Connects other Blocks </span>
+                          </li>
+                          <li class="features__item">
+                              <img src="./images/features_computer.svg" alt="">
+                              <span>Software bundle NOISE, Equator Player,<br> BLOCKS Dashboard, MaxMSP</span>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+
+          </article>
+          <!-- End FEATURES -->
+
+          <!-- GESTURES DEMO -->
+          <!-- GESTURES DEMO -->
+          <article class="container__info general__text">
+              <form action="#" class="gestures__instru">
+                  <div class="input">
+                      <label for="instru1">Clean and Bright</label>
+                      <input type="radio" id="instru1" name="instrument" value="cab">
+                  </div>
+                  <div class="input">
+                      <label for="instru2">Electric Piano</label>
+                      <input type="radio" id="instru2" name="instrument" value="dep">
+                  </div>
+                  <div class="input">
+                      <label for="instru3">Floating glass</label>
+                      <input type="radio" id="instru3" name="instrument" value="fg">
+                  </div>
+                  <div class="input">
+                      <label for="instru4">Jazz Organ</label>
+                      <input type="radio" id="instru4" name="instrument" value="jors">
+                  </div>
+              </form>
+              <div class="gestures__canvas">
+                  <div class="gestures__hammer">
+                      <div class="gestures__pellet"></div>
+                  </div>
+              </div>
+              <form action="#" class="gestures__choices">
+                  <div class="input">
+                      <label class="gestures__choices--top" for="geste1">Strike</label>
+                      <input type="radio" id="geste1" name="gesture" value="tap">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--top" for="geste2">Glide</label>
+                      <input type="radio" id="geste2" name="gesture" value="panLeftRight">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--bottom" for="geste3">Slide</label>
+                      <input type="radio" id="geste3" name="gesture" value="panUpDown">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--bottom" for="geste4">Press</label>
+                      <input type="radio" id="geste4" name="gesture" value="press">
+                  </div>
+              </form>
+          </article>
+          <!-- End GESTURES -->
+          <!-- End GESTURES -->
+
+          <!-- SOFTWARES -->
+          <article class="container__info softwares__section">
+
+              <!-- Top introduction text -->
+              <div class="softwares__title">
+                  <h1 class="general__title">Including a suite of software</h1>
+              </div>
+
+              <!-- Image-->
+              <div class="softwares__image--1">
+                  <img class="gestures__img--content" src="./images/softwares_equator@1080w.png" alt="equator" srcset="./images/softwares_equator.png 320w,
+       ./images/softwares_equator.png 720w,
+       ./images/softwares_equator.png 1080w"
+                       sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”>
+">
+              </div>
+
+              <!-- Equator-->
+              <div class="softwares__infos">
+                  <h3 class="general__subtitle--bold">Equator Player</h3>
+                  <p class="general__text">
+                      Browse over 200 free sounds on a desktop sound player based <br> on Equator, ROLI’s flagship soft synth and sound engine.
+                  </p>
+              </div>
+
+              <!-- Button-->
+              <div class="softwares__button">
+                  <button class="button__top demo__button popup-button" data-popin="equator_learn.html">
+                      <div class="button__text">
+                          <span class="general__button--light">
+                              Learn more
+                          </span>
+                      </div>
+                  </button>
+              </div>
+
+          </article>
+
+          <article class="container__info .softwares__section">
+
+              <div class="softwares__space"></div>
+
+              <!-- Image-->
+              <div class="softwares__image--2">
+                  <img class="gestures__img--content " src="./images/softwares_dashboard@1080w.png" alt="equator" srcset="./images/softwares_dashboard.png 320w,
+       ./images/softwares_dashboard.png 720w,
+       ./images/softwares_dashboard.png 1080w"
+                       sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”>
+">
+              </div>
+
+              <!-- Blocks dashboard-->
+              <div class="softwares__infos">
+                  <h3 class="general__subtitle--bold">Blocks Dashboard</h3>
+                  <p class="general__text">
+                      Control music software programs outside the NOISE and Equator <br> environment. Seaboard Block becomes a versatile controller.
+                  </p>
+              </div>
+
+              <!-- Button -->
+              <div class="softwares__button">
+                  <button class="button__top demo__button popup-button" data-popin="blocks_learnmore.html">
+                      <div class="button__text">
+                          <span class="general__button--light">
+                              Learn more
+                          </span>
+                      </div>
+                  </button>
+              </div>
+
+              <!-- Others softwares -->
+              <div class="softwares__others content__large">
+                  <div class="softwares__others--each">
+                      <p class="softwares__brand">Tracktion</p>
+                      <p class="softwares__softname">Waveform</p>
+                  </div>
+                  <div class="softwares__others--each">
+                      <p class="softwares__brand">FXpansion</p>
+                      <p class="softwares__softname">Strobe2</p>
+                  </div>
+                  <div class="softwares__others--each">
+                      <p class="softwares__brand">Cycling7</p>
+                      <p class="softwares__softname">MaxMSP</p>
+                  </div>
+              </div>
+
+          </article>
+          <!-- End SOFTWARES -->
+
+          <!-- APP -->
+          <article class="container__info app__section">
+
+            <!-- Informations -->
+            <div class="app__infos">
+                <h1 class="general__title">NOISE</h1>
+                <h3 class="general__subtitle--book">Music made mobile</h3>
+                <div class="app__stores">
+                    <img src="./images/app_apple.svg" alt="App store">
+                    <img src="./images/app_google.svg" alt="Play store">
+                </div>
+                    <p class="general__text">
+                        NOISE is a free app with hundred of sounds that makes music mobile, so you can sketch musical ideas anywhere you take your connected device. It pairs wirelessly with Seaboard Block.
+                    </p>
+            </div>
+
+            <!-- Image -->
+            <div class="app__picture">
+                <img src="./images/app.png" alt="Mobile app" srcset="./images/app.png 320w,
+       ./images/app.png 720w,
+       ./images/app.png 1080w"
+                     sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”>
+">
+            </div>
+
+          </article>
+          <!-- End APP-->
+
+          <!-- ECOSYSTEM-->
+          <article class="container__info ecosystem__section">
+
+              <!-- Text informations  -->
+              <div class="ecosystem__infos">
+                  <h1 class="general__title">Expand your instrument</h1>
+                  <p class="general__text general__text--paragraph">
+                      Seaboard block is a powerful musical instrument and the centerpiece of a BLOCKS kit. <br> Connect your Keywave with other musical building blocks to have a better hands-on control. <br> Customize the instrument that’s right for you, and grow all the way with your music.
+                  </p>
+              </div>
+
+              <!-- Button -->
+              <div class="ecosystem__button">
+                  <button class="button__top demo__button popup-button" data-popin="expand_learnmore.html">
+                      <div class="button__text">
+                          <span class="general__button--light">
+                              Learn more
+                          </span>
+                      </div>
+                  </button>
+              </div>
+
+              <!-- Animation -->
+              <div class="ecosystem__images--mobile">
+                  <img class="ecosystem__image--fix" src="./images/ecosystem_large@320w.png" alt="Main">
+              </div>
+
+              <!-- Image for large screen -->
+              <div class="ecosystem__image--large">
+                  <img src="./images/ecosystem_large@1080w.png" alt="Ecosystem" srcset="./images/ecosystem_large.png 320w,
+       ./images/ecosystem_large.png 720w,
+       ./images/ecosystem_large.png 1080w"
+                       sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”">
+              </div>
+
+          </article>
+          <!-- End ECOSYSTEM -->
+
+          <!-- SPECS -->
+          <article class="container__info specs__section specs">
+
+              <!-- Responsive container -->
+              <div class="content__large">
+
+              <!-- Top text -->
+              <div class="specs__titles">
+                  <h1 class="general__title--white">Include</h1>
+                  <h3 class="general__subtitle--white">Seaboard Blocks</h3>
+              </div>
+
+              <!-- Specs -->
+              <div class="specs__elements">
+
+                  <!-- Image -->
+                  <div class="specs__image">
+                      <img src="./images/specs_seaboard.svg" alt="Tech specs images">
+                  </div>
+
+                  <!-- Icons-->
+                  <div class="specs__right">
+                      <div class="specs__icons">
+                          <div class="specs__icon">
+                              <img src="./images/specs_soft.svg" alt="Software icon">
+                              <p class="specs__text">Suite of software</p>
+                          </div>
+                          <div class="specs__icon">
+                              <img src="./images/specs_usb.svg" alt="Software icon">
+                              <p class="specs__text">USB-C to USB-A cable</p>
+                          </div>
+                          <div class="specs__icon">
+                              <img src="./images/specs_quickstart.svg" alt="Software icon">
+                              <p class="specs__text">Quick Start Guide</p>
+                          </div>
+                          <div class="specs__icon">
+                              <img src="./images/specs_warrantly.svg" alt="Software icon">
+                              <p class="specs__text">One Year Warranty</p>
+                          </div>
+                      </div>
+                      <div class="specs__button">
+                          <button class="button__big demo__button popup-button" data-popin="tech_specs.html">
+                              <div class="button__text">
+                          <span class="general__button--light">
+                              Read the specs
+                          </span>
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+
+              </div>
+
+              </div>
+
+          </article>
+          <!-- End SPECS -->
+
+          <!-- COMMUNITY -->
+          <article class="container__info community__section community">
+
+              <!-- Informations -->
+              <h3 class="general__subtitle--white">Join the community</h3>
+              <h1 class="general__subtitle--bold--white">Noise.fm</h1>
+              <p class="general__text--white general__text--paragraph">A new way of making music with BLOCKS and NOISE. <br> With these products, a diverse community of artists creates amazing things.</p>
+
+              <!-- Button -->
+              <div class="community__button">
+                  <button class="button__top demo__button">
+                      <div class="button__text">
+                          <span class="general__button--light">
+                              Join now
+                          </span>
+                      </div>
+                  </button>
+              </div>
+
+          </article>
+          <!-- End COMMUNITY-->
+
+          <!-- ORDER -->
+          <article class="container__info order__section">
+
+              <!-- Top text -->
+              <div class="order__block--top">
+                  <h1 class="general__subtitle--bold">Order your Seaboard Block now</h1>
+              </div>
+
+              <div class="order__block--bottom">
+
+                  <!-- Image -->
+                  <div class="order__img--left">
+                      <img class="order__img--content" src="./images/order_block.png" alt="block" srcset="./images/order_block.png 320w,
+       ./images/order_block.png 720w,
+       ./images/order_block.png 1080w"
+                           sizes="(min-width: 1024px) 50vw,
+      (min-width: 768px) 75vw,
+       100vw”">
+                  </div>
+
+                  <!-- List -->
+                  <div class="order__list--right">
+                      <ul class="order__list--items general__text">
+                          <li class="order__item">
+                              <button class="button__top">
+                                  <div class="button__text">
+                                    <span class="general__button--light">BUY</span>
+                                      <span class="general__button">329,95€</span>
+                                  </div>
+                              </button>
+                          </li>
+                          <li class="order__item">
+                              <img src="./images/order_valid.svg" alt="">
+                              <span>Free shipping </span>
+                          </li>
+                          <li class="order__item">
+                              <img src="./images/order_valid.svg" alt="">
+                              <span>Free returns</span>
+                          </li>
+                          <li class="order__item">
+                              <img src="./images/order_valid.svg" alt="">
+                              <span>Lifetime support</span>
+                          </li >
+                          <li class="order__item">
+                              <img src="./images/order_valid.svg" alt="">
+                              <span>Ships in 3-4 weeks</span>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+
+          </article>
+          <!-- End ORDER -->
+
+          <!-- FOOTER -->
+          <article class="container__info footer__section footer">
+
+            <!-- Newsletter -->
+            <h1 class="general__subtitle--bold--white">Newsletter</h1>
+
+            <form class="newsletter" action="#">
+                <input class="newsletter__text newsletter__button" type="text" placeholder="Want the latest ROLI news ? Sign up !">
+                <button class="button__footer">
+                    <div class="button__text">
+                        <span class="general__button--light">JOIN</span>
+                    </div>
+                </button>
+            </form>
+
+            <!-- Social networks -->
+            <h1 class="general__subtitle--bold--white">Follow us</h1>
+
+            <div class="footer__socials">
+                <img src="./images/facebook.svg" alt="Facebook">
+                <img src="./images/twitter.svg" alt="Twitter">
+                <img src="./images/instagram.svg" alt="Instagram">
+                <img src="./images/youtube.svg" alt="Youtube">
+            </div>
+
+            <!-- Copyright -->
+            <p class="copyright__text">Copyright © 2017 ROLI Ltd. All rights reserved.</p>
+
+          </article>
+          <!-- End FOOTER -->
+
+      </section>
+
+    </body>
+
+
+
+</html>

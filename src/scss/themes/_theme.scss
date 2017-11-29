@@ -1,0 +1,15 @@
+.popin-open {
+  overflow: hidden;
+}
+
+.popin {
+  //display: none;
+  overflow: scroll;
+  position: fixed;
+  height: 100vh;
+  transition: 0.2s all ease-in-out;
+  top:0;
+  left:0;
+  z-index: 1000;
+  opacity: 1;
+}

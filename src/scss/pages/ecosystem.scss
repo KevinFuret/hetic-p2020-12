@@ -1,0 +1,56 @@
+// HOMEPAGE
+// ECOSYSTEM SECTION
+
+.ecosystem__infos{
+  height : 35%;
+
+  // Responsive
+  @media screen and (min-width : 500px) {
+    height : 40%;
+  }
+
+  h1 {
+    margin-bottom : 30px;
+  }
+}
+
+.ecosystem__images--mobile {
+  height : 60%;
+  display : flex;
+  align-items : flex-end;
+  justify-content : center;
+  position : relative;
+
+  // Responsive
+  @media screen and (min-width : 500px) {
+    display : none;
+  }
+
+  .ecosystem__image--fix {
+    width : 100%;
+
+    // Responsive
+    @media screen and (min-width : 500px) {
+      margin-left : 00%;
+      height : 220px;
+    }
+  }
+}
+
+.ecosystem__image--large {
+  display: none;
+  height : 60%;
+
+  // Responsive
+  @media screen and (min-width : 500px) {
+    display : flex;
+
+  }
+
+  img {
+    padding-top : 5%;
+    height : 60%;
+    width : auto;
+    margin : 0 auto;
+  }
+}

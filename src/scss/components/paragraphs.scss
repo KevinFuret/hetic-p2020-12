@@ -1,0 +1,18 @@
+// RECURRENTS PARAGRAPHS
+
+.general__text--paragraph {
+  margin : 0% 5% 0% 5%;
+}
+
+br {
+
+  // Responsive
+  @media screen and (max-width : 700px) {
+    display : inline;
+    content : ' ';
+    clear :none;
+  }
+  @media screen and (min-width: 700px) {
+    display: inline;
+  }
+}

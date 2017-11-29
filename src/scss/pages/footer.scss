@@ -1,0 +1,36 @@
+// HOMEPAGE
+// FOOTER SECTION
+
+.footer {
+   height : 100%;
+   display : flex;
+   justify-content : space-around;
+
+   h1 {
+      line-height : 1;
+      margin-bottom : 0px;
+      margin-top : 10px;
+   }
+}
+
+.newsletter__text {
+   height : 44px;
+   width : 246px;
+   border-radius : 4px;
+   border-width : 0px;
+   padding-left : 13px;
+   padding-right : 13px;
+   vertical-align : top;
+}
+
+ .footer__socials{
+    display : flex;
+    justify-content : space-around;
+    width : 300px;
+    margin : 0 auto;
+
+    img {
+       width : 44px;
+       height : 44px;
+    }
+ }

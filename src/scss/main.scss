@@ -1,4 +1,5 @@
 @import 'abstracts/variables';
+@import 'abstracts/fonts';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
@@ -16,7 +17,24 @@
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
+@import 'components/paragraphs';
+@import 'components/youtube-video';
 
 @import 'pages/home';
+@import 'pages/intro';
+@import 'pages/zoom';
+@import 'pages/demo';
+@import 'pages/features';
+@import 'pages/gestures';
+@import 'pages/softwares';
+@import 'pages/app';
+@import 'pages/ecosystem';
+@import 'pages/specs';
+@import 'pages/community';
+@import 'pages/order';
+@import 'pages/expand_learnmore';
+@import 'pages/learnmore_popup';
+@import 'pages/footer';
+@import 'pages/tech_specs';
 
 @import 'themes/theme';

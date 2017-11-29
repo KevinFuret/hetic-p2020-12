@@ -1,0 +1,65 @@
+// HOMEPAGE
+// SOFTWARES SECTION
+
+
+.softwares__title {
+  height : 25%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+
+  .general__title {
+    margin-bottom : 0px;
+    margin-left : 20px;
+    margin-right : 20px;
+  }
+}
+
+.softwares__image--1 {
+  height : 35%;
+
+  img {
+    height : 110%;
+    margin-left : -5%;
+    margin-top : -15px;
+  }
+}
+
+.softwares__image--2 {
+  height : 25%;
+
+  img {
+    height : 110%;
+    margin-top : -20px;
+  }
+}
+
+.softwares__infos {
+  height : 30%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-direction : column;
+  padding : 0px 20px 0px 20px;
+}
+
+.softwares__button {
+  height : 10%;
+}
+
+.softwares__space{
+  height : 15%;
+}
+
+.softwares__others{
+  height : 20%;
+  display : flex;
+  justify-content : space-around;
+  align-items : center;
+
+  // Responsive
+  @media screen and (min-width : 700px) {
+    width : 70%;
+    margin : 0 auto;
+  }
+}

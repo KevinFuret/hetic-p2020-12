@@ -1,0 +1,19 @@
+// HOMEPAGE
+// VIDEO DEMO SECTION
+
+.demo__block--top {
+  flex-direction : column;
+  display : inherit;
+  justify-content : space-between;
+  align-items : center;
+  height : 25%;
+
+  @media screen and (min-width : 700px) {
+    width : 45%;
+  }
+
+  .demo__button {
+    width : 180px;
+    margin : 0;
+  }
+}

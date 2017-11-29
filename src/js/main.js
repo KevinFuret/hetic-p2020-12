@@ -1,21 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM fully loaded and parsed");
-  });
-  /* 'use strict';
+import popup from "./popup.js";
+import Headroom from "headroom.js";
+import youtube from "./youtube.js";
+import gestures from "./gestures.js";
 
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
+document.addEventListener("DOMContentLoaded", () => {
+  popup();
+  youtube();
+  gestures();
+  // INITIALISATION OF THE MENU
+    const header = document.querySelector(".header");
+    const headroom  = new Headroom(header);
+    headroom.init();
 
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
 
-      currentScrollTop = a;
-
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  }); */
+});

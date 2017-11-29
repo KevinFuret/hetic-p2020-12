@@ -1,0 +1,212 @@
+// GENERAL CLASSES
+// BUTTONS
+
+.general__title {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $dark-grey;
+  font-size : 32px;
+  line-height : 1.2;
+  margin-bottom : 20px;
+}
+
+.general__title--white {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 32px;
+  line-height : 1.2;
+}
+
+.general__subtitle--book {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $dark-grey;
+  font-size : 20px;
+  line-height : 1.4;
+}
+
+.general__subtitle--book--white {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 20px;
+  line-height : 1.4;
+}
+
+.general__subtitle--bold {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $dark-grey;
+  font-size : 24px;
+  line-height : 1.4;
+  margin-bottom : 20px;
+}
+
+.general__subtitle--bold--white {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 24px;
+  line-height : 1.4;
+  margin-bottom : 20px;
+}
+
+.general__subtitle--white {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 24px;
+  line-height : 1.4;
+}
+
+.general__text {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $dark-grey;
+  font-size : 14px;
+  line-height : 1.5;
+}
+
+.general__text--white {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 16px;
+  line-height : 1.5;
+}
+
+.general__button {
+   @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+   color : $white;
+   font-size : 15px;
+   line-height : 1.5;
+   text-transform : uppercase;
+ }
+
+.general__button--bold {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 15px;
+  line-height : 1.5;
+  text-transform : uppercase;
+}
+
+.general__button--light {
+  @include font-face('BentonSans', 'BentonSans-Light', 300, normal);
+  color : $white;
+  font-size : 15px;
+  line-height : 1.5;
+  text-transform : uppercase;
+}
+
+.gestures__title {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $grey;
+  font-size : 24px;
+  line-height : 1.2;
+}
+
+.gestures__title--selected {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  background-image : $gradient;
+  -webkit-background-clip : text;
+  background-clip : text;
+  -webkit-text-fill-color : transparent;
+  font-size : 32px;
+  line-height : 1.2;
+}
+
+.gestures__subtitle {
+  @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+  color : $medium-grey;
+  font-size : 32px;
+  line-height : 1.2;
+}
+
+.gestures__subtitle--selected {
+  @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+  background-image : $gradient;
+  -webkit-background-clip : text;
+  background-clip : text;
+  -webkit-text-fill-color : transparent;
+  font-size : 32px;
+  line-height : 1.2;
+}
+
+.softwares__brand {
+  @include font-face('BentonSans', 'BentonSans-Light', 300, normal);
+  color : $dark-grey;
+  font-size : 20px;
+  line-height : 1.2;
+}
+
+.softwares__softname {
+  @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+  color : $dark-grey;
+  font-size : 20px;
+  line-height : 1.2;
+}
+
+.specs__text {
+  @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+  color : $white;
+  font-size : 13px;
+  line-height : 1.2;
+}
+
+.specs__subtitle {
+  @include font-face('BentonSans', 'BentonSans-Bold', bold, normal);
+  color : $white;
+  font-size : 16px;
+  line-height : 3;
+  text-align: left;
+}
+
+.specs__little {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 13px;
+  line-height : 1.5;
+  text-align: left;
+}
+
+.copyright__text {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $white;
+  font-size : 12px;
+  letter-spacing : -0.5px;
+  text-align : left;
+  margin-left : 3%;
+}
+
+.newsletter__button {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $dark-grey;
+  font-size : 15px;
+}
+
+.popup__ontext {
+  @include font-face('BentonSans', 'BentonSans-Medium', 500, normal);
+  color : $dark-grey;
+  font-size : 18px;
+  line-height : 1.2;
+}
+
+.popup__text {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $grey;
+  font-size : 14px;
+  line-height : 1.5;
+}
+
+.popup__text--price {
+  @include font-face('BentonSans', 'BentonSans-Book', normal, normal);
+  color : $grey;
+  font-size : 18px;
+  line-height : 1.2;
+}
+
+html {
+  @media screen and (min-width: 800px) {
+    font-size : 110%;
+  }
+}
+
+.gesture-active {
+  background: -webkit-linear-gradient(#46B6FE, #00B1BB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}

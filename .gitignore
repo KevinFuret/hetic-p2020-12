@@ -4,9 +4,10 @@ vendor
 
 # Mac files
 .DS_Store
+.idea
 
 # Dist folder
-assets
+dist
 
 #yarn
 yarn-error.log

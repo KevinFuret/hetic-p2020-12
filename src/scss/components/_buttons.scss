@@ -1,0 +1,63 @@
+// GENERAL CLASSES
+// BUTTONS
+
+.button__close {
+  width : 48px;
+  height : 48px;
+  border-radius : 100%;
+  background-image : $gradient;
+}
+
+.button__close--round {
+
+  @extend .button__close;
+  cursor: pointer;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+
+  & svg.close-icon {
+    height : 20px;
+    width : 20px;
+  }
+}
+
+.button__top {
+  width : 140px;
+  height : 45px;
+  border : none;
+  border-radius : 5px;
+  background-image : $gradient;
+  margin-right : 15px;
+}
+
+.button__top:hover{
+  cursor : pointer;
+}
+
+.button__big {
+  width : 160px;
+  height : 45px;
+  border : none;
+  border-radius : 5px;
+  background-image : $gradient;
+  margin-right : 15px;
+}
+
+.button__big:hover{
+  cursor : pointer;
+}
+
+.button__footer {
+  width : 60px;
+  height : 45px;
+  border : none;
+  border-radius : 5px;
+  background-image : $gradient;
+  margin-right : 15px;
+}
+
+.button__text {
+  padding-top : 6px;
+  align-items : center;
+}
