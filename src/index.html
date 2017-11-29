@@ -8,6 +8,9 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Accueil</title>
+
+        <script defer src="https://hammerjs.github.io/dist/hammer.js"></script>
+        <script defer src="./js/index.js"></script>
     </head>
     <!-- End Head -->
 
@@ -168,31 +171,57 @@
           <!-- GESTURES DEMO -->
           <article class="container__info general__text">
 
-              <!-- Musical styles -->
-              <div class="gestures__slider">
-                  <ul class="gestures__title">
-                      <li>Rock</li>
-                      <li>Slide</li>
-                      <li>Glide</li>
-                  </ul>
-              </div>
+                  <form action="#" class="gestures__instru">
+                      <label for="instru1">Clean and Bright</label>
+                      <input type="radio" id="instru1" name="instrument" value="cab"><br>
+                      <label for="instru2">Electric Piano</label>
+                      <input type="radio" id="instru2" name="instrument" value="dep"><br>
+                      <label for="instru3">Floating glass</label>
+                      <input type="radio" id="instru3" name="instrument" value="fg"><br>
+                      <label for="instru4">Jazz Organ</label>
+                      <input type="radio" id="instru4" name="instrument" value="jors"><br>
+                  </form>
 
-              <!-- Image -->
-              <div class="gestures__img">
-                  <img class="gestures__img--content" src="./images/block.png" alt="block">
-              </div>
+              <!--&lt;!&ndash; Musical styles &ndash;&gt;-->
+              <!--<div class="gestures__slider">-->
+                  <!--<ul class="gestures__title">-->
+                      <!--<li>Rock</li>-->
+                      <!--<li>Slide</li>-->
+                      <!--<li>Glide</li>-->
+                  <!--</ul>-->
+              <!--</div>-->
 
+              <div class="gestures__canvas">
+                  <div class="gestures__hammer">
+                    <div class="gestures__pellet"></div>
+                  </div>
+              </div>
+              <!--&lt;!&ndash; Image &ndash;&gt;-->
+              <!--<div class="gestures__img">-->
+                  <!--<img class="gestures__img&#45;&#45;content" src="./images/block.png" alt="block">-->
+              <!--</div>-->
+
+              <form action="#" class="gestures__choices">
+                  <label class="gestures__choices--top" for="geste1">Strike</label>
+                  <input type="radio" id="geste1" name="gesture" value="tap"><br>
+                  <label class="gestures__choices--top" for="geste2">Glide</label>
+                  <input type="radio" id="geste2" name="gesture" value="panLeftRight"><br>
+                  <label class="gestures__choices--bottom" for="geste3">Slide</label>
+                  <input type="radio" id="geste3" name="gesture" value="panUpDown"><br>
+                  <label class="gestures__choices--bottom" for="geste4">Press</label>
+                  <input type="radio" id="geste4" name="gesture" value="press"><br><br>
+              </form>
               <!-- Gestures -->
-              <div class="gestures__choices gestures__subtitle">
-                  <div class="gestures__choices--top">
-                      <span>Strike</span>
-                      <span>Press</span>
-                  </div>
-                  <div class="gesture__choices--bottom">
-                      <span>Glide</span>
-                      <span>Rock</span>
-                  </div>
-              </div>
+              <!--<div class="gestures__choices gestures__subtitle">-->
+                  <!--<div class="gestures__choices&#45;&#45;top">-->
+                      <!--<span>Strike</span>-->
+                      <!--<span>Press</span>-->
+                  <!--</div>-->
+                  <!--<div class="gesture__choices&#45;&#45;bottom">-->
+                      <!--<span>Glide</span>-->
+                      <!--<span>Rock</span>-->
+                  <!--</div>-->
+              <!--</div>-->
 
           </article>
           <!-- End GESTURES -->
@@ -502,7 +531,5 @@
       </section>
 
     </body>
-
-    <script src="./js/index.js"></script>
 
 </html>

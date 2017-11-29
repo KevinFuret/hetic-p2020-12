@@ -111,7 +111,14 @@ function fonts() {
     .pipe(gulp.dest(dist + '/fonts'));
 }
 
+/**
+ * SOUNDS
+ */
 
+function sounds() {
+    return gulp.src('src/sounds/**/*')
+        .pipe(gulp.dest(dist + '/sounds'));
+}
 
 /**
  * GLOBAL
@@ -123,9 +130,9 @@ function clean() {
 
 gulp.task('clean', clean);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, sounds)));
 
-gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done) {
+gulp.task('default', gulp.parallel(html, scss, js, images, fonts, sounds, function(done) {
   sync.init({
      server: {
     baseDir: 'dist'
