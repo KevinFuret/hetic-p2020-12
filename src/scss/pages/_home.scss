@@ -15,93 +15,88 @@
   height : 100vh;
   text-align : center;
   overflow : hidden;
+}
 
-  &:nth-child(1) {
-    padding : 0px 5px 50px 5px;
-    justify-content : space-evenly;
-  }
+.intro__section {
+  padding : 0px 5px 50px 5px;
+  justify-content : space-evenly;
+}
 
-  &:nth-child(2) {
-    position : relative;
-    padding : 70px 5px 50px 5px;
-  }
+.introbis__section {
+  position : relative;
+  padding : 70px 5px 50px 5px;
+}
 
-  &:nth-child(3) {
-    background : url("http://lorempixel.com/1400/1400/abstract/7/") no-repeat;
-    background-size : cover;
-
-    &.demo__video {
-      background-color : ghostwhite;
-    }
-  }
-
-  &:nth-child(4) {
-    padding : 70px 0px 0px 0px;
-
-    // Responsive
-    @media screen and (min-width : 700px) {
-      margin-bottom : 100px;
-    }
-  }
-
-  &:nth-child(5) {
-    display : flex;
-    background-color : lightgrey;
-  }
-
-  &:nth-child(6) { }
-
-  &:nth-child(7) { }
-
-  &:nth-child(8) {
-     height : 135vh;
-
-    // Responsive
-    @media screen and (min-width:  700px) {
-      height : 100vh;
-      display : flex;
-      flex-wrap : wrap;
-      align-items : center;
-    }
-  }
-
-  &:nth-child(9) {
-    height : 120vh;
-  }
-
-  &:nth-child(10) {
-    height : 120vh;
-
-    // Responsive
-    @media screen and (min-width : 700px) {
-      height: 80vh;
-    }
-  }
-
-  &:nth-child(11) {
-    background : url("../../images/community.jpg") no-repeat;
-    background-size : cover;
-    height : 60vh;
-    min-height : 520px;
-
-  }
-  &:nth-child(12) {
-    height : 60vh;
-    min-height : 450px;
-  }
-
-  &:nth-child(13) {
-    height : 50vh;
-    min-height : 330px;
-    background-image : linear-gradient(to bottom, #2f4252, #26313a);
-
-    // Responsive
-    @media screen and (min-width: 700px) {
-      height: 70vh;
-    }
+.video__section{
+  background-size : cover;
+  background-color : ghostwhite;
   }
 }
 
+.features__section {
+  padding : 70px 0px 0px 0px;
+
+  // Responsive
+  @media screen and (min-width : 700px) {
+    margin-bottom : 100px;
+  }
+}
+
+.gestures__section {
+  display : flex;
+  background-color : lightgrey;
+}
+
+.softwares__section { }
+
+.app__section {
+  height : 135vh;
+
+  // Responsive
+  @media screen and (min-width:  700px) {
+    height : 100vh;
+    display : flex;
+    flex-wrap : wrap;
+    align-items : center;
+  }
+}
+
+.ecosystem__section {
+  height : 120vh;
+}
+
+.specs__section {
+  height : 120vh;
+
+  // Responsive
+  @media screen and (min-width : 700px) {
+    height: 80vh;
+  }
+}
+
+.community__section {
+  background : url("../../images/community.jpg") no-repeat;
+  background-size : cover;
+  height : 60vh;
+  min-height : 520px;
+
+}
+
+.order__section {
+  height : 60vh;
+  min-height : 450px;
+}
+
+.footer__section {
+  height : 50vh;
+  min-height : 330px;
+  background-image : linear-gradient(to bottom, #2f4252, #26313a);
+
+  // Responsive
+  @media screen and (min-width: 700px) {
+    height: 70vh;
+  }
+}
 
 .demo__video {
   display: flex;
