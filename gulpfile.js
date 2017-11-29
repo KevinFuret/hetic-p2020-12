@@ -44,6 +44,7 @@ function html() {
 function htaccess() {
     return  gulp.src('src/.htaccess')
         .pipe(gulp.dest('dist/'))
+        .pipe(sync.stream());
 }
 
 
