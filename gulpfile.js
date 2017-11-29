@@ -13,6 +13,7 @@ var sync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 var pxtorem = require('gulp-pxtorem');
 var plumber = require('gulp-plumber');
+var critical = require('critical');
 /*var srcset = require ('gulp-srcset');
 var sugar_srcset = require ('gulp-sugar-srcset');*/
 
@@ -35,15 +36,16 @@ var dist = "dist";
 
 
 function html() {
-    //console.log('sugar')
     return  gulp.src('src/*.html')
-        /*.pipe(sugar_srcset({
-            responsive : {suffix :'@[match]w'}
-        }))*/
         .pipe(gulp.dest('dist/'))
         .pipe(sync.stream());
 }
 
+function htaccess() {
+    return  gulp.src('src/.htaccess')
+        .pipe(gulp.dest('dist/'))
+        .pipe(sync.stream());
+}
 
 
 /**
@@ -121,11 +123,12 @@ function clean() {
   return del([dist]);
 }
 
+
 gulp.task('clean', clean);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, htaccess)));
 
-gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done) {
+gulp.task('default', gulp.parallel(html, scss, js, images, fonts, htaccess, function(done) {
   sync.init({
      server: {
     baseDir: 'dist'
