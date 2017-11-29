@@ -38,12 +38,6 @@ function html() {
         .pipe(sync.stream());
 }
 
-function headers() {
-    return  gulp.src('src/_headers')
-        .pipe(gulp.dest('dist/'))
-        .pipe(sync.stream());
-}
-
 
 /**
  * SCSS
@@ -92,6 +86,7 @@ function js() {
 
 function images() {
   return gulp.src('src/images/**/*')
+      .pipe(imagemin())
     .pipe(gulp.dest(dist + '/images'));
 }
 
@@ -107,9 +102,8 @@ function fonts() {
 
 function generateImages() {
     return gulp.src('src/images/**/*')
-        .pipe(imagemin())
         .pipe(srcset([{
-            width:  [1, 1080, 720, 320],
+            width:  [1080, 720, 320],
         }]))
         .pipe(gulp.dest(dist + '/images'));
 }
@@ -127,9 +121,9 @@ gulp.task('clean', clean);
 
 gulp.task('generateImages', generateImages);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, generateImages, fonts, headers)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts)));
 
-gulp.task('default', gulp.parallel(html, scss, js, images, fonts, headers, function(done) {
+gulp.task('default', gulp.parallel(html, scss, js, images, fonts, function(done) {
   sync.init({
      server: {
     baseDir: 'dist'
@@ -140,7 +134,6 @@ gulp.task('default', gulp.parallel(html, scss, js, images, fonts, headers, funct
   gulp.watch('src/*.html', html);
   gulp.watch('src/**/*.scss', scss);
   gulp.watch('src/**/*.js', js);
-  gulp.watch('src/**/_headers', headers);
 
   done();
 }));
