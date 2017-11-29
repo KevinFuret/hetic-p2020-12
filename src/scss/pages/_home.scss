@@ -27,7 +27,6 @@
   }
 
   &:nth-child(3) {
-    padding : 70px 0px 0px 0px;
     background : url("http://lorempixel.com/1400/1400/abstract/7/") no-repeat;
     background-size : cover;
 
@@ -101,4 +100,28 @@
       height: 70vh;
     }
   }
+}
+
+
+.demo__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .video {
+    height: 100%;
+    width: 100%;
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  h1 {
+    color: white;
+  }
+}
+
+.demo__block--top {
+  position: absolute;
+  z-index: 1;
 }
