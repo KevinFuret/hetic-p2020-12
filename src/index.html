@@ -8,6 +8,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Accueil</title>
+        <script defer src="https://hammerjs.github.io/dist/hammer.js"></script>
         <script defer src="./js/index.js"></script>
     </head>
     <!-- End Head -->
@@ -176,41 +177,51 @@
           <!-- End FEATURES -->
 
           <!-- GESTURES DEMO -->
-          <article class="container__info gestures__section general__text">
-
-              <!-- Musical styles -->
-              <div class="gestures__slider">
-                  <ul class="gestures__title">
-                      <li>Rock</li>
-                      <li>Slide</li>
-                      <li>Glide</li>
-                  </ul>
-              </div>
-
-              <!-- Image -->
-              <div class="gestures__img">
-                  <img class="gestures__img--content" src="./images/block.png" alt="block" srcset="./images/block.png 320w,
-       ./images/block.png 720w,
-       ./images/block.png 1080w"
-                       sizes="(min-width: 1024px) 50vw,
-      (min-width: 768px) 75vw,
-       100vw”>
-">
-              </div>
-
-              <!-- Gestures -->
-              <div class="gestures__choices gestures__subtitle">
-                  <div class="gestures__choices--top">
-                      <span>Strike</span>
-                      <span>Press</span>
+          <!-- GESTURES DEMO -->
+          <article class="container__info general__text">
+              <form action="#" class="gestures__instru">
+                  <div class="input">
+                      <label for="instru1">Clean and Bright</label>
+                      <input type="radio" id="instru1" name="instrument" value="cab">
                   </div>
-                  <div class="gesture__choices--bottom">
-                      <span>Glide</span>
-                      <span>Rock</span>
+                  <div class="input">
+                      <label for="instru2">Electric Piano</label>
+                      <input type="radio" id="instru2" name="instrument" value="dep">
+                  </div>
+                  <div class="input">
+                      <label for="instru3">Floating glass</label>
+                      <input type="radio" id="instru3" name="instrument" value="fg">
+                  </div>
+                  <div class="input">
+                      <label for="instru4">Jazz Organ</label>
+                      <input type="radio" id="instru4" name="instrument" value="jors">
+                  </div>
+              </form>
+              <div class="gestures__canvas">
+                  <div class="gestures__hammer">
+                      <div class="gestures__pellet"></div>
                   </div>
               </div>
-
+              <form action="#" class="gestures__choices">
+                  <div class="input">
+                      <label class="gestures__choices--top" for="geste1">Strike</label>
+                      <input type="radio" id="geste1" name="gesture" value="tap">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--top" for="geste2">Glide</label>
+                      <input type="radio" id="geste2" name="gesture" value="panLeftRight">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--bottom" for="geste3">Slide</label>
+                      <input type="radio" id="geste3" name="gesture" value="panUpDown">
+                  </div>
+                  <div class="input">
+                      <label class="gestures__choices--bottom" for="geste4">Press</label>
+                      <input type="radio" id="geste4" name="gesture" value="press">
+                  </div>
+              </form>
           </article>
+          <!-- End GESTURES -->
           <!-- End GESTURES -->
 
           <!-- SOFTWARES -->
@@ -360,7 +371,7 @@
 
               <!-- Animation -->
               <div class="ecosystem__images--mobile">
-                  <img class="ecosystem__image--fix" src="./images/ecosystem_main@320w.png" alt="Main">
+                  <img class="ecosystem__image--fix" src="./images/ecosystem_large@320w.png" alt="Main">
               </div>
 
               <!-- Image for large screen -->

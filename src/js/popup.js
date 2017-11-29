@@ -9,14 +9,9 @@ export default () => {
                     popinContent.innerHTML = data;
                     popinContent.classList.add('popin-div');
                     document.querySelector('.popin').appendChild(popinContent);
-                    console.log(document.querySelector('.popin'));
-                    document.querySelector('.popin').style.display = "block";
                     document.querySelector('body').classList.add('popin-open');
                     document.querySelector('.header').classList.add('headroom--unpinned');
                     fermeturePopup();
-                })
-                .then((error) => {
-                //console.error(error);
                 })
         })
     });
@@ -24,11 +19,8 @@ export default () => {
     function fermeturePopup(){
         const close = document.querySelector('.button__close--round');
 
-        console.log(close);
-
         close.addEventListener('click', (e) => {
             document.querySelector('.popin-div').remove();
-            document.querySelector('.popin').style.display = "none";
             document.querySelector('body').classList.remove('popin-open');
             document.querySelector('.header').classList.remove('unheadroom--unpinned');
         })
