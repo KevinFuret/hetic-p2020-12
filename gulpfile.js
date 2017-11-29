@@ -127,7 +127,7 @@ gulp.task('clean', clean);
 
 gulp.task('generateImages', generateImages);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, fonts, sounds)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, scss, js, images, generateImages, fonts, sounds)));
 
 gulp.task('default', gulp.parallel(html, scss, js, images, fonts, sounds, function(done) {
   sync.init({
