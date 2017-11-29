@@ -138,6 +138,7 @@ gulp.task('default', gulp.parallel(html, scss, js, images, fonts, headers, funct
   gulp.watch('src/*.html', html);
   gulp.watch('src/**/*.scss', scss);
   gulp.watch('src/**/*.js', js);
+  gulp.watch('src/**/_headers', headers);
 
   done();
 }));
