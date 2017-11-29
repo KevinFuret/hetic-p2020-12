@@ -23,7 +23,7 @@
         opacity : 0;
       }
 
-      10% {
+      15% {
         display : block;
         opacity : 0.4;
       }
@@ -38,7 +38,7 @@
         opacity : 1;
       }
 
-      75% {
+      80% {
         display : none;
         opacity : 0;
       }
@@ -60,12 +60,12 @@
         opacity : 0;
       }
 
-      75% {
+      88% {
         display : block;
         opacity : 0;
       }
 
-      90% {
+      96% {
         display : block;
         opacity : 0.4;
       }
@@ -88,17 +88,17 @@
         opacity : 0;
       }
 
-      10% {
+      15% {
         display : none;
         opacity : 0;
       }
 
-      30% {
+      25% {
         display : block;
         opacity : 0.4;
       }
 
-      30% {
+      35% {
         display : block;
         opacity : 1;
       }
@@ -108,7 +108,7 @@
         opacity : 1;
       }
 
-      75% {
+      80% {
         display : none;
         opacity : 0;
       }
@@ -132,7 +132,7 @@
     height : 152px;
     margin : auto;
     align-content : center;
-    animation : scaler 9s ease-out;
+    animation : scaler 9.5s ease-out;
     animation-fill-mode: forwards;
 
     @-webkit-keyframes scaler {
@@ -154,7 +154,7 @@
   .intro__subtext {
     justify-self : flex-end;
     opacity : 0;
-    animation : fadeInThird 9s ease-out;
+    animation : fadeInThird 10s ease-out;
 
     // Animation
     @-webkit-keyframes fadeInThird {
@@ -183,7 +183,7 @@
         opacity : 1;
       }
 
-      75% {
+      70% {
         display : none;
         opacity : 0;
       }
@@ -192,6 +192,70 @@
         display : none;
         opacity : 0;
       }
+    }
+  }
+}
+
+.intro__img {
+  position : relative;
+}
+
+.intro__finger {
+  position : absolute;
+  width : 10px;
+  left : 63%;
+  top : 85%;
+
+  .intro__circle2 {
+    width : 10px;
+    height : 10px;
+    border-radius: 50%;
+    background: #FFF;
+    position : absolute;
+    animation : finger 3s infinite;
+    animation-timing-function : linear;
+    animation-delay : 10s;
+    animation-fill-mode : backwards;
+  }
+
+  .intro__circle {
+    width : 10px;
+    height : 10px;
+    border-radius: 50%;
+    background: #FFF;
+    position : absolute;
+    animation : finger 3s infinite;
+    animation-timing-function : linear;
+    animation-delay : 10.5s;
+    animation-fill-mode : backwards;
+  }
+
+  // Animation
+  @keyframes finger {
+
+    0% {
+      transform : scale(1);
+      opacity : 0;
+    }
+
+    1% {
+      transform : scale(1);
+      opacity : 1;
+    }
+
+    33% {
+      transform : scale(4);
+      opacity : 0.20;
+    }
+
+    67% {
+      transform : scale(7);
+      opacity : 0.10;
+    }
+
+    100% {
+      transform : scale(10);
+      opacity : 0;
     }
   }
 }
