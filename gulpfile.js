@@ -92,6 +92,7 @@ function js() {
 
 function images() {
   return gulp.src('src/images/**/*')
+      .pipe(imagemin())
     .pipe(gulp.dest(dist + '/images'));
 }
 
@@ -107,9 +108,8 @@ function fonts() {
 
 function generateImages() {
     return gulp.src('src/images/**/*')
-        .pipe(imagemin())
         .pipe(srcset([{
-            width:  [1, 1080, 720, 320],
+            width:  [1080, 720, 320],
         }]))
         .pipe(gulp.dest(dist + '/images'));
 }
